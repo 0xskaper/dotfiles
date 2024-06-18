@@ -3,4 +3,7 @@ eval "$(fzf --zsh)"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH=$HOME/.gem/bin:$PATH
 export PATH=$HOME/development/flutter/bin:$PATH
+export EDITOR="/Applications/Neovide.app/Contents/MacOS/Neovide"
 eval "$(starship init  zsh)"
+alias nvide='neovide'
+alias moi="chezmoi"
