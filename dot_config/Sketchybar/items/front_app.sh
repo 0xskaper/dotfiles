@@ -18,3 +18,4 @@ sketchybar \
 	label.padding_right=10 \
 	associated_display=active \
 	--subscribe front_app front_app_switched
+
