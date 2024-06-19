@@ -54,7 +54,6 @@ sketchybar --add item flow right \
           background.corner_radius="$CORNER_RADIUS" \
           background.color="$BAR_COLOR" \
 	        background.height=26 \
-	        background.border_color="$BLUE" \
           background.border_width="$BORDER_WIDTH" \
 	        background.padding_right=5 \
           icon.padding_left=10 \
