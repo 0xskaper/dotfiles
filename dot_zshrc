@@ -7,3 +7,7 @@ export EDITOR="/Applications/Neovide.app/Contents/MacOS/Neovide"
 eval "$(starship init  zsh)"
 alias nvide='neovide'
 alias moi="chezmoi"
+alias focus="tell application \"Flow\" to start"
+alias focus_pause="tell application \"Flow\" to stop"
+alias focus_skip="tell application \"Flow\" to stop"
+alias focus_reset="tell application \"Flow\" to reset"
