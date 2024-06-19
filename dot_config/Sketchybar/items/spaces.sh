@@ -29,7 +29,6 @@ sketchybar --add item spacer.2 left \
 sketchybar --add bracket spaces '/space.*/' \
 	--set spaces background.border_width="$BORDER_WIDTH" \
 	background.corner_radius="$CORNER_RADIUS" \
-  background.border_color="$BLUE" \
 	background.color="$BAR_COLOR" \
 	background.height=26 \
 	background.drawing=on
