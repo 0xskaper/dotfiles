@@ -4,12 +4,12 @@ COLOR="$GREEN"
 
 sketchybar --add item clock right \
 	--set clock update_freq=1 \
-	icon.padding_left=10 \
+	icon.padding_left=5 \
 	icon.color="$COLOR" \
-	icon="󱑅" \
+	icon="" \
 	label.color="$COLOR" \
 	label.padding_right=5 \
-	label.width=100 \
+	label.width=275 \
 	align=center \
 	background.height=26 \
 	background.corner_radius="$CORNER_RADIUS" \
