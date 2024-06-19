@@ -39,7 +39,6 @@ source "$ITEM_DIR/front_app.sh"
 
 # Right
 source "$ITEM_DIR/clock.sh"
-source "$ITEM_DIR/calendar.sh"
 source "$ITEM_DIR/cpu.sh"
 
 sketchybar --add item flow right \
