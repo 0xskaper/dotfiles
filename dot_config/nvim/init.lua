@@ -45,7 +45,6 @@ vim.opt.smartindent = true
 vim.opt.hlsearch = true
 vim.opt.showcmd = true
 vim.opt.cmdheight = 0
-vim.opt.laststatus = 0
 vim.opt.scrolloff = 10
 vim.opt.wrap = false
 vim.opt.mouse = ""
