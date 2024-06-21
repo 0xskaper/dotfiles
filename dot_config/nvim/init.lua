@@ -38,8 +38,16 @@ vim.g.neovide_fullscreen = true
 vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=yellow")
 vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
+
+vim.opt.title = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+vim.opt.hlsearch = true
 vim.opt.showcmd = true
 vim.opt.cmdheight = 0
+vim.opt.laststatus = 0
+vim.opt.scrolloff = 10
+vim.opt.wrap = false
 vim.opt.mouse = ""
 vim.loader.enable()
 
