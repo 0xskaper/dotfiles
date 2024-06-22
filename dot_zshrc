@@ -6,5 +6,5 @@ export PATH=$HOME/development/flutter/bin:$PATH
 export EDITOR="/Applications/Neovide.app/Contents/MacOS/Neovide"
 source <(fzf --zsh)
 eval "$(starship init  zsh)"
-alias nvide='neovide'
+alias nvide='neovide --no-vsync'
 alias moi="chezmoi"
