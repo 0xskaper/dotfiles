@@ -64,13 +64,6 @@ return {
             tooltip = "Dart",
             type = 0,
           }
-          -- lazy = {                                 -- Vim filetype or file name or file extension = table or string (see wiki)*
-          --   name = 'Lazy',                         -- Optional override for the icon name, redundant for language types
-          --   icon = 'https://example.com/lazy.png', -- Rich Presence asset name or URL
-          --   tooltip = 'lazy.nvim',                 -- Text to display when hovering over the icon
-          --   type = 2,                              -- 0 = language, 1 = file browser, 2 = plugin manager, 3 = lsp manager, 4 = vcs; defaults to language
-          -- },
-          -- ['Cargo.toml'] = 'crates',
         },
       })
     end,
