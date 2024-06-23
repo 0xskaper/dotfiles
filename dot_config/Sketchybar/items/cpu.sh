@@ -4,7 +4,7 @@ COLOR="0xffb49aef"
 
 sketchybar --add item cpu center \
 	--set cpu \
-	update_freq=1\
+	update_freq=10\
 	icon.color="$COLOR" \
 	icon.padding_left=10 \
 	label.color="$COLOR" \
