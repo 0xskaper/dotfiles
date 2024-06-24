@@ -16,3 +16,4 @@ function yy() {
 eval "$(starship init  zsh)"
 alias nvide='neovide --no-vsync'
 alias moi="chezmoi"
+source "$HOME/.openai_key.zsh"
