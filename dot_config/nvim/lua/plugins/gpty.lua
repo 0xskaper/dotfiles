@@ -4,7 +4,7 @@ return {
   config = function()
     require("chatgpt").setup({
       openai_params = {
-        model = "gpt-3.5-turbo",
+        model = "gpt-4o",
       },
     })
   end,
