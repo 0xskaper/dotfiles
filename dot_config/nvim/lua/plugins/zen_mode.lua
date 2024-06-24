@@ -1,7 +1,7 @@
 -- Lua
 return {
 	"folke/zen-mode.nvim",
-  width = 300,
+  width = 500,
   height = 2,
 	opts = {
 		-- your configuration comes here
