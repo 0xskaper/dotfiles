@@ -1,7 +1,7 @@
 add_newline = false
 
 [character]
-success_symbol = '[](bold green)'
+success_symbol = '[->>](bold green)'
 
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
