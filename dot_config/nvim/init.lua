@@ -49,4 +49,3 @@ vim.opt.scrolloff = 10
 vim.opt.wrap = false
 vim.opt.mouse = ""
 vim.loader.enable()
-
