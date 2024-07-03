@@ -14,6 +14,7 @@ function yy() {
 	rm -f -- "$tmp"
 }
 eval "$(starship init  zsh)"
-alias nvide='neovide --no-vsync --frame=buttonless'
+alias nvide='neovide --no-vsync'
 alias moi="chezmoi"
+alias moiup="chezmoi apply"
 source "$HOME/.openai_key.zsh"
