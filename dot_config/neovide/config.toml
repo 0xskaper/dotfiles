@@ -3,6 +3,6 @@ no-multigrid = false
 maximized = true
 srgb = false
 idle = true
-frame = "transparent"
+frame = "buttonless"
 title-hidden = true
 tabs = true
