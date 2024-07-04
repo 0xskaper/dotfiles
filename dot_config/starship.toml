@@ -178,7 +178,7 @@ format = '+$added($added_style)/-$deleted($deleted_style) '
 [git_status]
 conflicted = '$count '
 up_to_date = '(green)$count '
-untracked = '$count '
+untracked = '$count(yellow)'
 stashed = '$count '
 modified = '$count '
 staged = '[++(green)$count '
