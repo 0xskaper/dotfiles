@@ -173,7 +173,7 @@ tag_symbol = '󰓹 '
 
 [git_metrics]
 added_style = 'bold blue'
-format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+format = '+$added($added_style)/-$deleted($deleted_style) '
 
 [git_status]
 ahead = '${count}'
