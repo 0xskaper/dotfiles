@@ -27,7 +27,7 @@ vim.g.neovide_padding_left = 10
 vim.g.neovide_underline_stroke_scale = 0.5
 
 vim.g.neovide_cursor_antialiasing = true
-vim.g.neovide_cursor_trail_size = 0.3
+vim.g.neovide_cursor_trail_size = 0
 vim.g.neovide_refresh_rate = 120
 vim.g.neovide_hide_mouse_when_typing = true
 vim.g.neovide_show_border = false
@@ -47,5 +47,4 @@ vim.opt.showcmd = true
 vim.opt.cmdheight = 0
 vim.opt.scrolloff = 10
 vim.opt.wrap = false
-vim.opt.mouse = ""
 vim.loader.enable()
