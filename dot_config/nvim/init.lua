@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 
 
-vim.cmd("colorscheme xcodehc")
+colorscheme xcodehc
 vim.cmd("set termguicolors")
 vim.cmd("set number relativenumber!")
 vim.opt.rtp:prepend(lazypath)
