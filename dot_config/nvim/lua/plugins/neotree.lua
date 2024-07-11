@@ -9,6 +9,7 @@ return {
   config = function()
     vim.keymap.set("n", "<leader>n", ":Neotree position=current <CR>", {})
     vim.keymap.set("n", "<leader>c", ":Neotree close <CR>", {})
+    vim.keymap.set("n", "<leader>ng", ":Neotree float git_status <CR>", {})
     require("neo-tree").setup({
       window = {
         width = 90,
