@@ -18,3 +18,4 @@ alias nvide='neovide --no-vsync'
 alias moi="chezmoi"
 alias moiup="chezmoi apply"
 source "$HOME/.openai_key.zsh"
+export PATH=$PATH:$HOME/go/bin
