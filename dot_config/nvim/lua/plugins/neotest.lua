@@ -24,5 +24,26 @@ return {
 			end,
 			desc = "Debug nearest test",
 		},
+		{
+			"<leader>ts",
+			function()
+				require("neotest").run.stop()
+			end,
+			desc = "Debug nearest test",
+		},
+		{
+			"<leader>ta",
+			function()
+				require("neotest").run.attach()
+			end,
+			desc = "Debug nearest test",
+		},
+		{
+			"<leader>tn",
+			function()
+				require("neotest").run.run(vim.expand("%"))
+			end,
+			desc = "Debug nearest test",
+		},
 	},
 }
