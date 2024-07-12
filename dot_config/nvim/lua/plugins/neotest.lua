@@ -11,7 +11,7 @@ return {
 		config = function()
 			require("neotest").setup({
 				adapters = {
-					require("neotest-go"), -- Registration
+					require("neotest-golang"), -- Registration
 				},
 			})
 		end,
