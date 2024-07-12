@@ -8,6 +8,8 @@ return {
     "fredrikaverpil/neotest-golang", -- Installation
   },
   config = function()
+    vim.keymap.set("n", "<leader>tn", ":lua require('neotest').run.run(vim.fn.expand('%')) <CR>", {})
+    vim.keymap.set("n", "<leader>mo", ":lua require('neotest').output.open({ enter = true }) <CR>", {})
     require("neotest").setup({
       adapters = {
         require("neotest-golang"), -- Registration
