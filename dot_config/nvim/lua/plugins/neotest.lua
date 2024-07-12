@@ -6,7 +6,8 @@ return {
 			"nvim-lua/plenary.nvim",
 			"antoinemadec/FixCursorHold.nvim",
 			"nvim-treesitter/nvim-treesitter",
-			"fredrikaverpil/neotest-golang", -- Installation
+			"fredrikaverpil/neotest-golang",
+      "neotest/neotest-python"-- Installation
 		},
 		config = function()
 			require("neotest").setup({
