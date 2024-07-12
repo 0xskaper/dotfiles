@@ -40,7 +40,7 @@ return {
 		{
 			"<leader>tn",
 			function()
-				require("neotest").run.run(vim.expand("%"))
+				require("neotest").run.run(vim.fn.expand("%"))
 			end,
 			desc = "Debug nearest test",
 		},
