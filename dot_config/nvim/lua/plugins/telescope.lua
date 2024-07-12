@@ -18,6 +18,11 @@ return {
             require("telescope.themes").get_dropdown({}),
           },
         },
+        pickers = {
+          find_files = {
+            theme = "ivy"
+          }
+        }
       })
       require("telescope").load_extension("ui-select")
       require("telescope").load_extension("flutter")
