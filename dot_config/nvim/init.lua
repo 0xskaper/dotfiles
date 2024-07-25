@@ -24,14 +24,14 @@ vim.g.neovide_padding_bottom = 0
 vim.g.neovide_padding_right = 10
 vim.g.neovide_padding_left = 10
 vim.g.neovide_underline_stroke_scale = 0.5
-
 vim.g.neovide_cursor_antialiasing = true
-vim.g.neovide_cursor_trail_size = 0
+vim.g.neovide_cursor_trail_size = 0.3
 vim.g.neovide_refresh_rate = 120
 vim.g.neovide_hide_mouse_when_typing = true
 vim.g.neovide_scroll_animation_length = 0.1
 vim.g.neovide_show_border = false
-vim.g.neovide_fullscreen = true
+vim.g.neovide_fullscreen = false
+vim.g.neovide_cursor_animation_length = 0.05
 
 
 
