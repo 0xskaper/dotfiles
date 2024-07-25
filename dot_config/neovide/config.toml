@@ -1,6 +1,6 @@
 wsl = false
 no-multigrid = false
-maximized = true
+maximized = false
 srgb = false
 idle = true
 frame = "transparent"
