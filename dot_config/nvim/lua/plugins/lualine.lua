@@ -1,5 +1,5 @@
 local colors = {
-  bg = "#171717",
+  bg = "#272c34",
   fg = "#bbc2cf",
   yellow = "#ECBE7B",
   cyan = "#008080",
@@ -28,7 +28,7 @@ local conditions = {
 
 local getGithubUsername = function()
   local handle = io.popen("git config user.name")
-  local result = " " .. handle:read("*a")
+  local result = " " .. handle:read("*a")
   return string.sub(result, 1, -2)
 end
 
@@ -155,8 +155,6 @@ ins_left({
   color = { fg = colors.magenta, gui = "bold" },
 })
 
-ins_left({ "location" })
-
 ins_left({
   "diagnostics",
   sources = { "nvim_diagnostic" },
@@ -179,6 +177,11 @@ ins_left({
   end,
 })
 
+ins_right({
+  "filetype",
+  icon_only = true,
+  colored = true,
+})
 
 ins_right({
   -- Lsp server name .
@@ -197,7 +200,7 @@ ins_right({
     end
     return msg
   end,
-  icon = "",
+  icon = "",
   color = { fg = colors.orange },
 })
 
@@ -211,12 +214,6 @@ ins_right({
   "branch",
   icon = "",
   color = { fg = colors.violet, gui = "bold" },
-})
-
-ins_right({
-  "filetype",
-  icon_only = true,
-  colored = true,
 })
 
 ins_right({
@@ -234,7 +231,7 @@ ins_right({
 ins_right({
   -- mode component
   function()
-    return "<<-"
+    return ""
   end,
   color = function()
     -- auto change color according to neovims mode
@@ -264,7 +261,6 @@ ins_right({
   padding = { left = 2, right = 1 },
 })
 
-
 return {
   "nvim-lualine/lualine.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -272,4 +268,3 @@ return {
     require("lualine").setup(config)
   end,
 }
-
