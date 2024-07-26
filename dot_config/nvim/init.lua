@@ -44,7 +44,7 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.hlsearch = true
 vim.opt.showcmd = true
-vim.opt.cmdheight = 0
+vim.opt.cmdheight = -10
 vim.opt.scrolloff = 10
 vim.opt.wrap = false
 vim.loader.enable()
