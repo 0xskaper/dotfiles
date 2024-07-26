@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd $1
-RESET="#[fg=brightwhite,bg=#171717,nobold,noitalics,nounderscore,nodim]"
+RESET="#[fg=brightwhite,bg=#0c0e15,nobold,noitalics,nounderscore,nodim]"
 BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
 PROVIDER=$(git config remote.origin.url | awk -F '@|:' '{print $2}')
 
@@ -46,15 +46,15 @@ git fetch --atomic origin --negotiation-tip=HEAD
 REMOTE_DIFF="$(git diff --shortstat $(git rev-parse --abbrev-ref HEAD) origin/$(git rev-parse --abbrev-ref HEAD) 2>/dev/null | wc -l | bc)"
 
 if [[ $PR_COUNT > 0 ]]; then
-  PR_STATUS="#[fg=#3fb950,bg=#171717,bold] ${RESET}${PR_COUNT} "
+  PR_STATUS="#[fg=#3fb950,bg=#0c0e15,bold] ${RESET}${PR_COUNT} "
 fi
 
 if [[ $REVIEW_COUNT > 0 ]]; then
-  REVIEW_STATUS="#[fg=#d29922,bg=#171717,bold] ${RESET}${REVIEW_COUNT} "
+  REVIEW_STATUS="#[fg=#d29922,bg=#0c0e15,bold] ${RESET}${REVIEW_COUNT} "
 fi
 
 if [[ $ISSUE_COUNT > 0 ]]; then
-  ISSUE_STATUS="#[fg=#3fb950,bg=#171717,bold] ${RESET}${ISSUE_COUNT} "
+  ISSUE_STATUS="#[fg=#3fb950,bg=#0c0e15,bold] ${RESET}${ISSUE_COUNT} "
 fi
 
 if [[ $REMOTE_DIFF > 0 ]]; then
@@ -62,7 +62,7 @@ if [[ $REMOTE_DIFF > 0 ]]; then
 fi
 
 if [[ $PR_COUNT > 0 || $REVIEW_COUNT > 0 || $ISSUE_COUNT > 0 ]]; then
-  WB_STATUS="#[fg=#464646,bg=#171717,bold] $PROVIDER_ICON $RESET$PR_STATUS$REVIEW_STATUS$ISSUE_STATUS$REMOTE_STATUS"
+  WB_STATUS="#[fg=#464646,bg=#0c0e15,bold] $PROVIDER_ICON $RESET$PR_STATUS$REVIEW_STATUS$ISSUE_STATUS$REMOTE_STATUS"
 fi
 
 echo "$WB_STATUS"

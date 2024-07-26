@@ -8,7 +8,7 @@ parse_npcli_value() {
 ACCENT_COLOR="#0DD3BB"
 SECONDARY_COLOR="#24283B"
 BG_COLOR="#1F2335"
-BG_BAR="#171717"
+BG_BAR="#0c0e15"
 TIME_COLOR="#414868"
 
 if [[ $1 =~ ^[[:digit:]]+$  ]]; then
