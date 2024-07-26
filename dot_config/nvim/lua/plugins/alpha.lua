@@ -39,6 +39,12 @@ return {
       [[⠀⠀⠀⠀⠈⠳⣄⡈⠛⢿⣿⡟⠙⢿⣿⠟⠻⣿⡟⠙⠿⣿⠋⠉⠻⣿⠋⠀⠙⢿⡇⠀⠀⢙⣦⡤⠖⠋⢡⡴⠞⠉⠀⠀⠀⠀]],
       [[⠀⠀⠀⠀⠀⠀⠀⠙⠳⢤⣈⡙⠒⠦⠿⣄⣀⣸⣆⣀⠀⢘⣆⣀⣀⣸⣆⡤⠤⠬⠗⠒⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀]],
       [[⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠒⠲⠦⠤⠤⠄⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀]],
+      [[                                              ]],
+      [[                                              ]],
+      [[                                              ]],
+      [[                                              ]],
+      [[No one gets away with anything, ever, so take responsibility for your own life.]],
+      [[                                              ]],
     }
 
     dashboard.section.buttons.val = {}
