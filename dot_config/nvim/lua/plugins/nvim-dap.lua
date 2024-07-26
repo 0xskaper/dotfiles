@@ -1,6 +1,6 @@
 return {
 	"mfussenegger/nvim-dap",
-	dependecies = {
+	dependencies = {
 		"leoluz/nvim-dap-go",
 		"rcarriga/nvim-dap-ui",
 	},
