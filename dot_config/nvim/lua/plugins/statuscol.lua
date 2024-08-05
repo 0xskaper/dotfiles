@@ -5,7 +5,7 @@ return {
       relculright = true,
       segments = {
         {
-          sign = { maxwidth = 2, colwidth = 1 },
+          sign = { maxwidth = 1, colwidth = 2 },
         },
       },
     })
