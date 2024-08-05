@@ -38,7 +38,7 @@ vim.g.neovide_cursor_animation_length = 0.05
 vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=yellow")
 vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
-vim.cmd("hi SignColumn guifg=#1d2021")
+vim.cmd("hi SignColumn guibg=#1d2021")
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
