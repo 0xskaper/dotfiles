@@ -16,6 +16,8 @@ function yy() {
 eval "$(starship init  zsh)"
 alias nvide='neovide --no-vsync'
 alias moi="chezmoi"
-alias moiup="chezmoi apply"
+alias moiconf="chezmoi edit ~/.config"
+alias moizsh="chezmoi edit ~/.zshrc"
+alias moiupdate="chezmoi apply"
 source "$HOME/.openai_key.zsh"
 export PATH=$PATH:$HOME/go/bin
