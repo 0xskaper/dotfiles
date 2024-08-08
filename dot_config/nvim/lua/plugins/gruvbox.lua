@@ -8,6 +8,7 @@ return {
       contrast = "hard",
       palette_overrides = {
         dark1 = "#1d2021",
+        bright_red = "#dd7575",
       }
 		})
 		vim.cmd("colorscheme gruvbox")
