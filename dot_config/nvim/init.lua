@@ -6,10 +6,9 @@ if not vim.loop.fs_stat(lazypath) then
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
     "--branch=stable", -- latest stable release
-   lazypath,
+    lazypath,
   })
 end
-
 
 vim.cmd("set termguicolors")
 vim.cmd("set number relativenumber!")
@@ -47,3 +46,5 @@ vim.opt.showcmd = true
 vim.opt.cmdheight = 0
 vim.opt.wrap = false
 vim.loader.enable()
+
+vim.cmd("colorscheme rose-pine")
