@@ -38,6 +38,7 @@ vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
 vim.cmd("hi SignColumn guibg=#1d2021")
 vim.cmd("hi Visual guibg=#3c3836")
+vim.keymap.set("n", "<C-cd>", ":Copilot disable<CR>")
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
