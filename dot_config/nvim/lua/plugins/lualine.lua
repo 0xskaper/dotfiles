@@ -158,7 +158,7 @@ ins_right({
       enable = "",
       disable = "",
     },
-    spinner = require("copilot-status.spinners").arc
+    spinners = require("copilot-status.spinners").arc
   },
 })
 
