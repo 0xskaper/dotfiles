@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 require("vim-options")
 require("lazy").setup("plugins")
 
-vim.o.guifont = "FiraCode Nerd Font:Retina:h17"
+vim.o.guifont = "FiraCode Nerd Font:Retina:h18"
 
 vim.g.neovide_padding_top = 10
 vim.g.neovide_padding_bottom = 0
@@ -38,7 +38,7 @@ vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
 vim.cmd("hi SignColumn guibg=#1d2021")
 vim.cmd("hi Visual guibg=#3c3836")
-vim.keymap.set("n", "<C-cd>", ":Copilot disable<CR>")
+vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>")
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
