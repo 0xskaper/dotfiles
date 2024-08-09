@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 require("vim-options")
 require("lazy").setup("plugins")
 
-vim.o.guifont = "FiraCode Nerd Font:Retina:h16"
+vim.o.guifont = "FiraCode Nerd Font:Retina:h17"
 
 vim.g.neovide_padding_top = 10
 vim.g.neovide_padding_bottom = 0
