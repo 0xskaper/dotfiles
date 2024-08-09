@@ -46,5 +46,3 @@ vim.opt.showcmd = true
 vim.opt.cmdheight = 0
 vim.opt.wrap = false
 vim.loader.enable()
-
-vim.cmd("colorscheme rose-pine")
