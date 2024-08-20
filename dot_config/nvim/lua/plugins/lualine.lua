@@ -28,7 +28,7 @@ local conditions = {
 
 local getGithubUsername = function()
   local handle = io.popen("git config user.name")
-  local result = " " .. handle:read("*a")
+  local result = handle:read("*a")
   return string.sub(result, 1, -2)
 end
 
@@ -125,7 +125,7 @@ ins_left({
 ins_left({
   "filename",
   cond = conditions.buffer_not_empty,
-  color = { fg = colors.magenta, gui = "bold" },
+  color = { fg = colors.fg, gui = "bold" },
 })
 
 ins_left({
@@ -178,20 +178,20 @@ ins_right({
     end
     return msg
   end,
-  icon = "",
-  color = { fg = colors.orange },
+  icon = "󰿘 ",
+  color = { fg = colors.fg },
 })
 
 ins_right({
   getGithubUsername,
   icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
-  color = { fg = colors.cyan },
+  color = { fg = colors.fg },
 })
 
 ins_right({
   "branch",
   icon = "",
-  color = { fg = colors.violet, gui = "bold" },
+  color = { fg = colors.fg },
 })
 
 ins_right({
