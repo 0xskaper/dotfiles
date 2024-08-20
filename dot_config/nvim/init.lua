@@ -19,7 +19,7 @@ require("lazy").setup("plugins")
 vim.o.guifont = "FiraCode Nerd Font:Retina:h17"
 
 vim.g.neovide_padding_top = 20
-vim.g.neovide_padding_bottom = 5
+vim.g.neovide_padding_bottom = 1
 vim.g.neovide_padding_right = 5
 vim.g.neovide_padding_left = 5
 vim.g.neovide_underline_stroke_scale = 0.5
