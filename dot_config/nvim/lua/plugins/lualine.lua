@@ -85,12 +85,6 @@ ins_left({
 })
 
 ins_left({
-  "filetype",
-  icon_only = true,
-  colored = true,
-})
-
-ins_left({
   "filename",
   cond = conditions.buffer_not_empty,
   color = { fg = colors.fg },
@@ -103,10 +97,10 @@ ins_left({
   colored = true,
   diagnostics_color = {
     -- Same values as the general color option can be used here.
-    error = { fg = colors.red }, -- Changes diagnostics' error color.
-    warn = { fg = colors.yellow }, -- Changes diagnostics' warn color.
-    info = { fg = colors.cyan }, -- Changes diagnostics' info color.
-    hint = { fg = colors.green }, -- Changes diagnostics' hint color.
+    error = { fg = colors.fg }, -- Changes diagnostics' error color.
+    warn = { fg = colors.fg }, -- Changes diagnostics' warn color.
+    info = { fg = colors.fg }, -- Changes diagnostics' info color.
+    hint = { fg = colors.fg }, -- Changes diagnostics' hint color.
   },
 })
 
@@ -116,17 +110,6 @@ ins_left({
   function()
     return "%="
   end,
-})
-
-ins_right({
-  "copilot",
-  show_running = true,
-  symbols = {
-    status = {
-      enable = "",
-      disable = "",
-    },
-  },
 })
 
 ins_right({
@@ -165,11 +148,28 @@ ins_right({
   "diff",
   symbols = { added = " ", modified = " ", removed = " " },
   diff_color = {
-    added = { fg = colors.green },
-    modified = { fg = colors.orange },
-    removed = { fg = colors.red },
+    added = { fg = colors.fg },
+    modified = { fg = colors.fg },
+    removed = { fg = colors.fg },
   },
   cond = conditions.hide_in_width,
+})
+
+ins_right({
+  "copilot",
+  show_running = true,
+  symbols = {
+    status = {
+      enable = "",
+      disable = "",
+    },
+  },
+})
+
+ins_right({
+  "filetype",
+  icon_only = true,
+  colored = false,
 })
 
 return {
