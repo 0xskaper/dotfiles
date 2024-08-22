@@ -29,7 +29,7 @@ local conditions = {
 local getGithubUsername = function()
 	local handle = io.popen("git config user.name")
 	local result = handle:read("*a")
-	return string.sub(result, 1, -2) .. " -> "
+	return string.sub(result, 1, -2) .. " ->"
 end
 
 -- Config
@@ -76,6 +76,12 @@ end
 local function ins_right(component)
 	table.insert(config.sections.lualine_x, component)
 end
+
+ins_left({
+  function ()
+    return "  "
+  end,
+})
 
 ins_left({
 	-- filesize tabline
