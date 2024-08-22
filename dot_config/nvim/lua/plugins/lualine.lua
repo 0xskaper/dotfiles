@@ -46,6 +46,14 @@ local config = {
       inactive = { c = { fg = colors.fg, bg = colors.bg } },
     },
   },
+  tabline = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {},
+  },
   sections = {
     -- these are to remove the defaults
     lualine_a = {},
@@ -68,13 +76,13 @@ local config = {
 }
 
 -- Inserts a component in lualine_c at left section
-local function ins_left(component)
-  table.insert(config.sections.lualine_c, component)
+local function ins_left(tabline)
+  table.insert(config.sections.lualine_c, tabline)
 end
 
--- Inserts a component in lualine_x at right section
-local function ins_right(component)
-  table.insert(config.sections.lualine_x, component)
+-- Inserts a tabline in lualine_x at right section
+local function ins_right(tabline)
+  table.insert(config.sections.lualine_x, tabline)
 end
 
 ins_left({
@@ -112,7 +120,7 @@ ins_left({
 })
 
 ins_left({
-  -- filesize component
+  -- filesize tabline
   "filesize",
   icons_enabled = true,
   cond = conditions.buffer_not_empty,
@@ -212,11 +220,7 @@ return {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-      require("lualine").setup({
-        options = {
-          theme = "gruvbox_dark",
-        }
-      })
+      require("lualine").setup(config)
     end,
   },
 }
