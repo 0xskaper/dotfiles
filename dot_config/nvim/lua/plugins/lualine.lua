@@ -46,14 +46,6 @@ local config = {
       inactive = { c = { fg = colors.fg, bg = colors.bg } },
     },
   },
-  tabline = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = {},
-    lualine_x = {},
-    lualine_y = {},
-    lualine_z = {},
-  },
   sections = {
     -- these are to remove the defaults
     lualine_a = {},
@@ -76,13 +68,13 @@ local config = {
 }
 
 -- Inserts a component in lualine_c at left section
-local function ins_left(tabline)
-  table.insert(config.tabline.lualine_c, tabline)
+local function ins_left(component)
+  table.insert(config.sections.lualine_c, component)
 end
 
 -- Inserts a tabline in lualine_x at right section
-local function ins_right(tabline)
-  table.insert(config.tabline.lualine_x, tabline)
+local function ins_right(component)
+  table.insert(config.tabline.lualine_x, component)
 end
 
 ins_left({
