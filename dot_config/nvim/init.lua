@@ -20,8 +20,8 @@ vim.o.guifont = "JetBrainsMono Nerd Font:SemiBold:h17"
 
 vim.g.neovide_padding_top = 20
 vim.g.neovide_padding_bottom = 1
-vim.g.neovide_padding_right = 5
-vim.g.neovide_padding_left = 5
+vim.g.neovide_padding_right = 0
+vim.g.neovide_padding_left = 0
 vim.g.neovide_underline_stroke_scale = 0.5
 vim.g.neovide_cursor_antialiasing = true
 vim.g.neovide_cursor_trail_size = 0.2
