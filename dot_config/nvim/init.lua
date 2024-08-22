@@ -39,11 +39,6 @@ vim.cmd("hi SignColumn guibg=#1d2021")
 vim.cmd("hi Visual guibg=#3c3836")
 vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>")
 vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>")
-vim.opt.title = true
-vim.opt.autoindent = true
-vim.opt.smartindent = true
-vim.opt.hlsearch = true
 vim.opt.showcmd = true
 vim.opt.cmdheight = 0
-vim.opt.wrap = false
 vim.loader.enable()

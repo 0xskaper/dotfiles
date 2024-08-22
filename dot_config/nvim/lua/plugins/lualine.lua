@@ -78,40 +78,6 @@ local function ins_right(component)
 end
 
 ins_left({
-  function ()
-    return " "
-  end,
-  color = function()
-    -- auto change color according to neovims mode
-    local mode_color = {
-      n = colors.red,
-      i = colors.green,
-      v = colors.blue,
-      [""] = colors.blue,
-      V = colors.blue,
-      c = colors.magenta,
-      no = colors.red,
-      s = colors.orange,
-      S = colors.orange,
-      ic = colors.yellow,
-      R = colors.violet,
-      Rv = colors.violet,
-      cv = colors.red,
-      ce = colors.red,
-      r = colors.cyan,
-      rm = colors.cyan,
-      ["r?"] = colors.cyan,
-      ["!"] = colors.red,
-      t = colors.red,
-    }
-    return { fg = mode_color[vim.fn.mode()], gui = "bold" }
-  end,
-
-  icons_enabled = true,
-  padding = { left = 1 },
-})
-
-ins_left({
   -- filesize tabline
   "filesize",
   icons_enabled = true,
