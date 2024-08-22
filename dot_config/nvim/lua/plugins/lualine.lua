@@ -79,7 +79,7 @@ end
 
 ins_left({
   function ()
-    return "  "
+    return " "
   end,
 })
 
