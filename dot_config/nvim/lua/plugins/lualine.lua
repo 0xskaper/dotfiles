@@ -78,7 +78,9 @@ local function ins_right(component)
 end
 
 ins_left({
-  " ",
+  function ()
+    return " "
+  end,
   color = function()
     -- auto change color according to neovims mode
     local mode_color = {
@@ -183,18 +185,18 @@ ins_right({
 
 ins_right({
   getGithubUsername,
-  icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
+  icons_enabled = false,
   color = { fg = colors.fg },
 })
 
 ins_right({
   "branch",
   color = { fg = colors.fg },
+  icons = " ",
 })
 
 ins_right({
   "diff",
-  -- Is it me or the symbol for modified us really weird
   symbols = { added = " ", modified = " ", removed = " " },
   diff_color = {
     added = { fg = colors.green },
