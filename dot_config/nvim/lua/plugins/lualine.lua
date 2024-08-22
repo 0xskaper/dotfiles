@@ -74,7 +74,7 @@ end
 
 -- Inserts a tabline in lualine_x at right section
 local function ins_right(component)
-  table.insert(config.tabline.lualine_x, component)
+  table.insert(config.sections.lualine_x, component)
 end
 
 ins_left({
