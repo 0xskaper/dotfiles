@@ -11,7 +11,7 @@ $python\
 $character"""
 
 [directory]
-style = "blue"
+style = "bold blue"
 
 [character]
 success_symbol = "[❯](purple)"
@@ -44,3 +44,9 @@ style = "yellow"
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
+
+[dart]
+format = 'via [ $version](bold red) '
+
+[golang]
+format = 'via [🏎💨 $version](bold cyan) '
