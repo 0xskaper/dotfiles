@@ -4,8 +4,8 @@ return {
  	opts = ...,
  	config = function()
  		require("gruvbox").setup({
-       terminal_colors = false,
-       contrast = "hard",
+       terminal_colors = true,
+       contrast = "soft",
        palette_overrides = {
          bright_red = "#dd7575",
        }
