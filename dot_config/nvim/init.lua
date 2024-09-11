@@ -17,6 +17,7 @@ require("vim-options")
 require("lazy").setup("plugins")
 
 vim.o.guifont = "JetBrainsMono Nerd Font:SemiBold:h17"
+vim.o.background = "light"
 
 vim.g.neovide_padding_top = 20
 vim.g.neovide_padding_bottom = 1
