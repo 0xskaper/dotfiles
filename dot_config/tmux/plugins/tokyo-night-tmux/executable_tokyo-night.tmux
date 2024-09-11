@@ -54,7 +54,7 @@ tmux set -g status-left "#[fg=#3399ff,bg=#1d2021,bold] #{?client_prefix,󰠠 ,#[
 # Focus
 tmux set -g window-status-current-format "#[fg=#44dfaf,bg=#1d2021]   #[fg=#a9b1d6]$window_number #[bold,nodim]#W#[nobold,dim]#{?window_zoomed_flag, $zoom_number, $custom_pane} #{?window_last_flag,,} "
 # Unfocused
-tmux set -g window-status-format "#[fg=#c0caf5,bg=default,none,dim]   $window_number #W#[nobold,dim]#{?window_zoomed_flag, $zoom_number, $custom_pane}#[fg=yellow,blink] #{?window_last_flag,󰁯 ,} "
+tmux set -g window-status-format "#[fg=#c0caf5,bg=default,none,dim]  $window_number #W#[nobold,dim]#{?window_zoomed_flag, $zoom_number, $custom_pane}#[fg=yellow,blink] #{?window_last_flag,󰁯 ,} "
 
 #+--- Bars RIGHT ---+
 tmux set -g status-right "$cmus_status#[fg=#a9b1d6,bg=#1d2021] $git_status$wb_git_status"
