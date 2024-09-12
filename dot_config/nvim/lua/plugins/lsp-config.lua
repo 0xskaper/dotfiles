@@ -32,6 +32,7 @@ return {
         capabilities = capabilities,
         cmd = { "dart", "language-server", "--protocol=lsp" },
       })
+      lspconfig.jdtls.setup({capabilities = capabilities})
       lspconfig.yamlls.setup({ capabilities = capabilities })
       lspconfig.clangd.setup({ capabilities = capabilities })
       lspconfig.cmake.setup({ capabilities = capabilities })
