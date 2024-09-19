@@ -25,7 +25,6 @@ return {
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
-			require("java").setup({})
 
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig["sourcekit"].setup({ capabilities = capabilities })
@@ -33,27 +32,11 @@ return {
 				capabilities = capabilities,
 				cmd = { "dart", "language-server", "--protocol=lsp" },
 			})
-			lspconfig.jdtls.setup({
-				settings = {
-					java = {
-						configuration = {
-							runtimes = {
-								{
-									name = "JavaSE-22",
-									path = "/opt/jdk-22",
-									default = true,
-								},
-							},
-						},
-					},
-				},
-			})
 			lspconfig.yamlls.setup({ capabilities = capabilities })
 			lspconfig.clangd.setup({ capabilities = capabilities })
 			lspconfig.cmake.setup({ capabilities = capabilities })
 			lspconfig.markdown_oxide.setup({ capabilities = capabilities })
 			lspconfig.gopls.setup({ capabilities = capabilities })
-			lspconfig.tsserver.setup({ capabilities = capabilities })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
