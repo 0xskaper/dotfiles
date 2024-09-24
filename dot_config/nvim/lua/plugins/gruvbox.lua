@@ -7,7 +7,8 @@ return {
 			terminal_colors = true,
 			contrast = "hard",
 			palette_overrides = {
-				dark1 = "#1d2021",
+        dark0_hard = "#282828",
+				dark1 = "#282828",
 				bright_red = "#dd7575",
 			},
 		})
