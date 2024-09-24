@@ -33,10 +33,10 @@ vim.g.neovide_show_border = false
 vim.g.neovide_fullscreen = false
 vim.g.neovide_cursor_animation_length = 0.08
 
-vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=black")
+vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=yellow")
 vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
-vim.cmd("hi SignColumn guibg=#f5e4b7")
+vim.cmd("hi SignColumn guibg=#1d2024")
 vim.cmd("hi Visual guibg=#3c3836")
 vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>")
 vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>")
