@@ -31,6 +31,7 @@ vim.g.neovide_scroll_animation_length = 0.8
 vim.g.neovide_show_border = false
 vim.g.neovide_fullscreen = false
 vim.g.neovide_cursor_animation_length = 0.08
+vim.g.neovide_position_animation_length = 0.20
 
 vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=yellow")
 vim.cmd("hi LineNrAbove guifg=grey")
