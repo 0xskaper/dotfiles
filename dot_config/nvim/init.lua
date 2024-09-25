@@ -41,6 +41,5 @@ vim.cmd("hi Visual guibg=#3c3836")
 vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>")
 vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>")
 vim.opt.showcmd = true
-vim.opt.termguicolors = true
 vim.opt.cmdheight = 0
 vim.loader.enable()
