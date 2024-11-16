@@ -1,136 +1,120 @@
 format = """
-[╭](fg:current_line)\
-$os\
-$directory\
 $git_branch\
-$fill\
-$nodejs\
-$dotnet\
+$git_status\
 $python\
-$java\
+$nodejs\
 $c\
-$cmd_duration\
-$shell\
-$time\
-$username\
-$line_break\
-$character\
+$cpp\
+$rust\
+$java\
+$golang\
+$docker_context\
+$kubernetes
+$battery    $time
+$os [$username](yellow)[@](cyan)[$hostname](green) $directory$character
 """
 
-palette = 'dracula'
-add_newline = true
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red)'
 
-[palettes.dracula]
-foreground = '#F8F8F2'
-background = '#282A36'
-current_line = '#44475A'
-primary = '#1E1F29'
-box = '#44475A'
-blue	= '#6272A4'
-cyan = '#8BE9FD'
-green	= '#50FA7B'
-orange = '#FFB86C'
-pink = '#FF79C6'
-purple = '#BD93F9'
-red	= '#FF5555'
-yellow = '#F1FA8C'
+[battery]
+full_symbol = "• "
+charging_symbol = "⇡ "
+discharging_symbol = "⇣ "
 
-[os]
-format = '(fg:current_line)[](fg:red)[$symbol ](fg:primary bg:red)[](fg:red)'
-disabled = false
-
-[os.symbols]
-Alpine = ''
-Amazon = ''
-Android = ''
-Arch = ''
-CentOS = ''
-Debian = ''
-EndeavourOS = ''
-Fedora = ''
-FreeBSD = ''
-Garuda = ''
-Gentoo = ''
-Linux = ''
-Macos = ''
-Manjaro = ''
-Mariner = ''
-Mint = ''
-NetBSD = ''
-NixOS = ''
-OpenBSD = ''
-OpenCloudOS = ''
-openEuler = ''
-openSUSE = ''
-OracleLinux = '⊂⊃'
-Pop = ''
-Raspbian = ''
-Redhat = ''
-RedHatEnterprise = ''
-Solus = ''
-SUSE = ''
-Ubuntu = ''
-Unknown = ''
-Windows = ''
-
-[directory]
-format = '[─](fg:current_line)[](fg:pink)[󰷏 ](fg:primary bg:pink)[](fg:pink bg:box)[ $read_only$truncation_symbol$path](fg:foreground bg:box)[](fg:box)'
-home_symbol = " ~/"
-truncation_symbol = ' '
-truncation_length = 2
-read_only = '󱧵 '
-read_only_style = ''
-
-[git_branch]
-format = '[─](fg:current_line)[](fg:green)[$symbol](fg:primary bg:green)[](fg:green bg:box)[ $branch](fg:foreground bg:box)[](fg:box)'
-symbol = ' '
-
-[nodejs]
-format = '[─](fg:current_line)[](fg:green)[$symbol](fg:primary bg:green)[](fg:green bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
-symbol = '󰎙 Node.js'
-
-[dotnet]
-format = '[─](fg:current_line)[](fg:purple)[$symbol](fg:primary bg:purple)[](fg:purple bg:box)[ $tfm](fg:foreground bg:box)[](fg:box)'
-symbol = ' .NET'
-
-[python]
-format = '[─](fg:current_line)[](fg:green)[$symbol](fg:primary bg:green)[](fg:green bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
-symbol = ' python'
-
-[java]
-format = '[─](fg:current_line)[](fg:red)[$symbol](fg:primary bg:red)[](fg:red bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
-symbol = ' Java'
-
-[c]
-format = '[─](fg:current_line)[](fg:blue)[$symbol](fg:primary bg:blue)[](fg:blue bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
-symbol = ' C'
-
-[fill]
-symbol = '─'
-style = 'fg:current_line'
-
-[cmd_duration]
-min_time = 500
-format = '[─](fg:current_line)[](fg:orange)[ ](fg:primary bg:orange)[](fg:orange bg:box)[ $duration ](fg:foreground bg:box)[](fg:box)'
-
-[shell]
-format = '[─](fg:current_line)[](fg:blue)[ ](fg:primary bg:blue)[](fg:blue bg:box)[ $indicator](fg:foreground bg:box)[](fg:box)'
-unknown_indicator = 'shell'
-powershell_indicator = 'powershell'
-fish_indicator = 'fish'
-disabled = false
+[[battery.display]]
+threshold = 100
 
 [time]
-format = '[─](fg:current_line)[](fg:purple)[󰦖 ](fg:primary bg:purple)[](fg:purple bg:box)[ $time](fg:foreground bg:box)[](fg:box)'
-time_format = '%H:%M'
+format = "[$time]($style)"
 disabled = false
 
 [username]
-format = '[─](fg:current_line)[](fg:yellow)[ ](fg:primary bg:yellow)[](fg:yellow bg:box)[ $user](fg:foreground bg:box)[](fg:box) '
 show_always = true
+format = "[$user]($style)"
 
-[character]
-format = """
-[╰─$symbol](fg:current_line) """
-success_symbol = '[λ](fg:bold white)'
-error_symbol = '[×](fg:bold red)'
+[hostname]
+ssh_only = false
+format = "[$hostname]($style)"
+
+[c]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[directory]
+read_only = " "
+
+[docker_context]
+symbol = " "
+format = "[$symbol$context]($style)"
+
+[elm]
+symbol = " "
+
+[golang]
+symbol = " "
+format = "[$symbol($version )]($style)"
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+format = "[$symbol($version )]($style)"
+
+[memory_usage]
+symbol = " "
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[os]
+disabled = false
+
+[os.symbols]
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "﯑ "
+Gentoo = " "
+HardenedBSD = "ﲊ "
+Illumos = " "
+Linux = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = " "
+openSUSE = " "
+OracleLinux = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = " "
+Solus = "ﴱ "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = " "
+
+[package]
+symbol = " "
+format = "[$symbol($version )]($style)"
+
+[python]
+symbol = " "
+format = "[$symbol($version )]($style)"
