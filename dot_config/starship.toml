@@ -1,129 +1,54 @@
+# starship.toml
+
+add_newline = false
+palette = "default"
+
 format = """
-[](fg:#ffffff)\
-$os\
-[](fg:#ffffff bg:c2)\
+[╭](fg:separator)\
+$status\
 $directory\
-[](fg:c2 bg:#303030)\
-$git_branch\
-$fill\
-$nodejs\
-$dotnet\
-$python\
-$java\
-$c\
 $cmd_duration\
-$shell\
-[](fg:c4 bg:c2)\
-$time\
-[](fg:c2 bg:c1)\
-$username\
-[](fg:#004480)\
-[─╮](fg:c4)\
 $line_break\
+[╰](fg:separator)\
 $character\
 """
 
-palette = 'main'
-add_newline = true
+###########################################
 
-[palettes.main]
-c1 = '#004480' # blue light
-c2 = '#002240' # blue dark
-c3 = '#c6e7ff' # blue extra light
-c4 = '#303030' # gray
-c5 = '#808080' # gray light
+[palettes.default]
+prompt_ok  = "#8047c1"
+prompt_err = "#e23140"
+icon       = "#161514"
+separator  = "#35312c"
+background = "#35312c"
 
-[os]
-format = '[$symbol ](fg:#000000 bg:#ffffff)'
-disabled = false
+directory  = "#9f31e2"
+duration   = "#e26f31"
+status     = "#e23140"
 
-[os.symbols]
-Alpine = ''
-Amazon = ''
-Android = ''
-Arch = ''
-CentOS = ''
-Debian = ''
-EndeavourOS = ''
-Fedora = ''
-FreeBSD = ''
-Garuda = ''
-Gentoo = ''
-Linux = ''
-Macos = ''
-Manjaro = ''
-Mariner = ''
-Mint = ''
-NetBSD = ''
-NixOS = ''
-OpenBSD = '' # ''
-OpenCloudOS = '☁️'
-openEuler = ''
-openSUSE = ''
-OracleLinux = '⊂⊃'
-Pop = '' # ''
-Raspbian = ''
-Redhat = ''
-RedHatEnterprise = ''
-Solus = '' # ' '
-SUSE = ''
-Ubuntu = ''
-Unknown = ''
-Windows = ''
-
-[directory]
-format = '[ 󰷏 $path ](fg:c3 bg:c2 italic)'
-truncation_length = 2
-
-[git_branch]
-format = '[ 󰘬 $branch ](fg:#808080 bg:c4)'
-
-[nodejs]
-format = '[ $symbol$version ](fg:#ffffff bg:c4)'
-
-[dotnet]
-format = '[ $symbol$tfm ](fg:#ffffff bg:c4)'
-symbol = ' .NET '
-
-[python]
-format = '[ $symbol$version ](fg:#ffffff bg:c4)'
-symbol = ' '
-
-[java]
-format = '[ $symbol$version ](fg:#ffffff bg:c4)'
-symbol = ' '
-
-[c]
-format = '[ $symbol$version ](fg:#ffffff bg:c4)'
-symbol = ' '
-
-[fill]
-style = 'fg:c5 bg:c4'
-symbol = '.'
-
-[cmd_duration]
-min_time = 500
-format = '[ $duration ](fg:yellow bg:c4 bold)'
-
-[shell]
-format = '[  $indicator ](c5 bg:c4)'
-unknown_indicator = 'shell'
-powershell_indicator = 'powershell'
-fish_indicator = 'fish'
-disabled = false
-
-[time]
-disabled = false
-format = '[ $time ](fg:c3 bg:c2)'
-time_format = '󰦖 %H:%M'
-
-[username]
-format = '[  $user ](fg:#ffffff bg:c1)'
-show_always = true
+###########################################
 
 [character]
-format = """
-[┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯](fg:c4)
-[╰──$symbol](fg:c4) """
-success_symbol = '[≫](fg:#ffffff)'
-error_symbol = '[×](bold red)'
+success_symbol = "[❯](fg:prompt_ok)"
+error_symbol = "[❯](fg:prompt_err)"
+
+[directory]
+format = "[─](fg:separator)[](fg:directory)[](fg:icon bg:directory)[](fg:directory bg:background)[ $path](bg:background)[](fg:background)"
+truncate_to_repo = false
+truncation_length = 0
+
+[status]
+format = "[─](fg:separator)[](fg:status)[](fg:icon bg:status)[](fg:status bg:background)[ $status](bg:background)[](fg:background)"
+pipestatus = true
+pipestatus_separator = "-"
+pipestatus_segment_format = "$status"
+pipestatus_format = "[─](fg:separator)[](fg:status)[](fg:icon bg:status)[](fg:status bg:background)[ $pipestatus](bg:background)[](fg:background)"
+disabled = false
+
+[cmd_duration]
+format = "[─](fg:separator)[](fg:duration)[󱐋](fg:icon bg:duration)[](fg:duration bg:background)[ $duration](bg:background)[](fg:background)"
+min_time = 1000
+
+[time]
+format = "[](fg:duration)[󰥔](fg:icon bg:duration)[](fg:duration bg:background)[ $time](bg:background)[](fg:background)"
+disabled = false
