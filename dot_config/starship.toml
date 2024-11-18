@@ -21,7 +21,7 @@ $cmd_duration\
 $time\
 $jobs\
 $line_break\
-${custom.warp} ->"""
+${custom.warp} # """
 
 add_newline = false
 
