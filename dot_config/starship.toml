@@ -61,7 +61,7 @@ style = '#7ed1fb' # yellow bold
 # Shows current git branch
 [git_branch]
 # symbol = ' '
-symbol = ''
+symbol = ''
 format = '[//](black bold) [$symbol\[$branch\]]($style) '
 # truncation_length = 0
 # truncation_symbol = '…/'
