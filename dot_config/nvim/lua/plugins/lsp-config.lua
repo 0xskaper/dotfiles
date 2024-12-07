@@ -37,11 +37,9 @@ return {
 			lspconfig.clangd.setup({ capabilities = capabilities })
 			lspconfig.cmake.setup({ capabilities = capabilities })
 			lspconfig.markdown_oxide.setup({ capabilities = capabilities })
-      lspconfig.markdownlint.setup({ capabilities = capabilities })
 			lspconfig.gopls.setup({ capabilities = capabilities })
 			lspconfig.jdtls.setup({})
       lspconfig.pylsp.setup({ capabilities = capabilities })
-      lspconfig.prettier.setup({ capabilities = capabilities })
       lspconfig.html.setup({ capabilities = capabilities })
       lspconfig.ast_grep.setup({ capabilities = capabilities })
 
