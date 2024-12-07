@@ -34,7 +34,7 @@ disabled = false
 Windows = ' '
 Arch = '󰣇'
 Ubuntu = ''
-Macos = '󰀶'
+Macos = 'ARM M1'
 Unknown = '󰠥'
 
 # ---y
@@ -92,13 +92,10 @@ disabled = false
 # ---
 
 [vagrant]
-disabled = true
 
 [docker_context]
-disabled = true
 
 [helm]
-disabled = true
 
 [python]
 symbol = '󰌠'
@@ -107,10 +104,19 @@ format = '[//](black bold) [${symbol} ${pyenv_prefix}(${version} )(\($virtualenv
 
 
 [nodejs]
-disabled = true
 
 [ruby]
-disabled = true
 
 [terraform]
-disabled = true
+
+[dart]
+symbol = ''
+
+[nodejs]
+symbol = '󰎙'
+
+[go]
+symbol = ''
+
+[rust]
+symbol = '󱘗'
