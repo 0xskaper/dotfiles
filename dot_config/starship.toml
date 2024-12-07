@@ -1,203 +1,54 @@
-# Chevron Glance
-
-"$schema" = 'https://starship.rs/config-schema.json'
-
-format = """
-[](fg:sec)\
-$sudo\
-$os\
-$jobs\
-$username\
-$hostname\
-$localip\
-$git_status\
-$directory\
-$git_commit$git_state$git_metrics\
-$git_branch\
-$memory_usage\
-$status\
-[ ](fg:prim)\
-$cmd_duration\
-$line_break$character
-"""
+# starship.toml
 
 add_newline = false
+palette = "default"
 
-palette = "chevron_glance"
+format = """
+[╭](fg:separator)\
+$status\
+$directory\
+$cmd_duration\
+$line_break\
+[╰](fg:separator)\
+$character\
+"""
 
-[palettes.chevron_glance]
-prim = '#a7906f' #Primary/Directory Background
-sec = '#3a3a3a' #Accents
-primt = '#3a3a3a' #Primary text color (non-glyphic)
-sudo = '#9c454e'
-user = '#50925b'
-host = '#2596be'
-ip = '#2596be'
-duration = ''
-# Git Colors
-bbg = '#3a3a3a' #GitHub branch background.
-bfg = '#a7906f' #GitHub branch text.
-# Chevrons
-conflicted = 'red'
-ahead = 'cyan'
-behind = 'orange'
-diverged = 'blue'
-uptodate = 'green'
-untracked = 'purple'
-stashed =  '#6b84eb' #light blue
-modified = 'yellow'
-staged = '#c5e187' #sage
-renamed = '#ce63ff' #lilac
-deleted = '#f54caf' #pink
+###########################################
 
-[sudo]
-format = '[ ]($style)'
-style = 'fg:sudo bg:sec'
-disabled = false
+[palettes.default]
+prompt_ok  = "#8047c1"
+prompt_err = "#e23140"
+icon       = "#161514"
+separator  = "#35312c"
+background = "#35312c"
 
-[os]
-format = "[$symbol ]($style)"
-style = "fg:prim bg:sec"
-disabled = false
+directory  = "#9f31e2"
+duration   = "#e26f31"
+status     = "#e23140"
 
-[os.symbols]
-Alpine = ""
-Amazon = ""
-Android = ""
-Arch = ""
-CentOS = ""
-Debian = ""
-DragonFly = "🐉" # ""
-Emscripten = "🔗"
-EndeavourOS = "" # ""
-Fedora = ""
-FreeBSD = ""
-Garuda = ""
-Gentoo = ""
-HardenedBSD = "聯"
-Illumos = "🐦"
-Linux = ""
-Macos = ""
-Manjaro = ""
-Mariner = ""
-MidnightBSD = "🌘"
-Mint = ""
-NetBSD = ""
-NixOS = ""
-OpenBSD = "" # ""
-OpenCloudOS = "☁️"
-openEuler = ""
-openSUSE = ""
-OracleLinux = "⊂⊃"
-Pop = "" # ""
-Raspbian = ""
-Redhat = ""
-RedHatEnterprise = ""
-Redox = "🧪"
-Solus = "" # " "
-SUSE = ""
-Ubuntu = ""
-Unknown = ""
-Windows = ""
+###########################################
 
-[jobs]
-format = '[]($style)[$symbol$number](fg:primt bg:prim)[]($style)'
-style = 'fg:prim bg:sec'
-symbol = ' '
-symbol_threshold = 1
-number_threshold = 2
-disabled = false
-
-[username]
-format = '[](fg:sec bg:user)[ $user ]($style)[](fg:user bg:sec)'
-style_user = 'fg:primt bold bg:user'
-style_root = 'fg:primt bold bg:sudo'
-show_always = false
-disabled = false
-
-[hostname]
-format = '[ ](bg:sec)[@](fg:prim bold bg:sec)[ ](bg:sec)[](fg:sec bg:host)[$ssh_symbol](fg:primt bold bg:host)[ $hostname ](fg:primt bold bg:host)[](fg:host bg:sec)'
-ssh_only = true
-ssh_symbol = ' '
-#trim_at = '.companyname.com'
-disabled = false
-
-[localip]
-format = '[](fg:sec bg:ip)[ $localipv4 ](fg:primt bold bg:ip)[](fg:ip bg:sec)'
-ssh_only = true
-disabled = false
-
-[git_status]
-format = '([$all_status$ahead_behind]($style))[](fg:sec bg:prim)'
-style = 'fg:prim bg:sec'
-conflicted = '[](fg:conflicted bg:sec)'
-ahead = '[](fg:ahead bg:sec)'
-behind = '[](fg:behind bg:sec)'
-diverged = '[](fg:diverged bg:sec)'
-up_to_date = '[](fg:uptodate bold bg:sec)'
-untracked = '[](fg:untracked bold bg:sec)'
-stashed = '[](fg:stashed bg:sec)'
-modified = '[](fg:modified bg:sec)'
-staged = '[](fg:staged bg:sec)'
-renamed = '[](fg:renamed bg:sec)'
-deleted = '[](fg:deleted bold bg:sec)'
-disabled = false
+[character]
+success_symbol = "[❯](fg:prompt_ok)"
+error_symbol = "[❯](fg:prompt_err)"
 
 [directory]
-format = '[ ]($style)[$read_only](fg:primt bg:prim)[$repo_root]($repo_root_style)[$path](fg:primt bold bg:prim)'
-style = 'fg:primt bg:prim'
-home_symbol = ' ~'
-read_only = ' '
-#read_only_style = 'fg: bg:'
-truncation_length = 2
-truncation_symbol = '…/'
-truncate_to_repo = true
-repo_root_format = '[  ](fg:primt bg:prim)[$read_only]($read_only_style)[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path ]($style)'
-repo_root_style  = 'fg:primt bold bg:prim'
-use_os_path_sep = true
-disabled = false
+format = "[─](fg:separator)[](fg:directory)[](fg:icon bg:directory)[](fg:directory bg:background)[ $path](bg:background)[](fg:background)"
+truncate_to_repo = false
+truncation_length = 0
 
-[directory.substitutions]
-"Documents" = " "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-".config" = ". "
-
-[git_branch]
-format = '[](fg:bbg bg:bfg)[$symbol $branch(:$remote_branch)]($style)[](fg:bbg bg:bfg)'
-style = 'fg:bfg bold bg:bbg'
-symbol = ''
-#ignore_branches = ['master', 'main']
-
-[memory_usage]
-format = '[](fg:prim bg:sec)[$symbol]($style)[](fg:sec bg:prim)'
-style = 'fg:sudo bg:sec'
-symbol = '  !'
-threshold = 75
+[status]
+format = "[─](fg:separator)[](fg:status)[](fg:icon bg:status)[](fg:status bg:background)[ $status](bg:background)[](fg:background)"
+pipestatus = true
+pipestatus_separator = "-"
+pipestatus_segment_format = "$status"
+pipestatus_format = "[─](fg:separator)[](fg:status)[](fg:icon bg:status)[](fg:status bg:background)[ $pipestatus](bg:background)[](fg:background)"
 disabled = false
 
 [cmd_duration]
-format = '[ $duration ]($style)'
-style = 'fg:duration'
-min_time = 500
-disabled = false
+format = "[─](fg:separator)[](fg:duration)[󱐋](fg:icon bg:duration)[](fg:duration bg:background)[ $duration](bg:background)[](fg:background)"
+min_time = 1000
 
-
-[status]
-format = '[$symbol]($style)'
-style = 'fg:sudo bg:prim'
-symbol = '  '
+[time]
+format = "[](fg:duration)[󰥔](fg:icon bg:duration)[](fg:duration bg:background)[ $time](bg:background)[](fg:background)"
 disabled = false
-
-[line_break]
-disabled = false
-
-[character]
-disabled = false
-success_symbol = '[ ](bold fg:prim)'
-error_symbol = '[ ](bold fg:sudo)'
-vimcmd_symbol = '[ ](bold fg:prim)'
-vimcmd_replace_one_symbol = '[ ](bold fg:purple)'
-vimcmd_replace_symbol = '[ ](bold fg:purple)'
-vimcmd_visual_symbol = '[ ](bold fg:yellow)'
