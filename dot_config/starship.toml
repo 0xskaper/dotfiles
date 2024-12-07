@@ -47,12 +47,6 @@ format = '[//](black bold) [$user](#2883ff) ' # 2883ff
 disabled = false
 show_always = true
 
-# Shows the hostname
-[hostname]
-ssh_only = false
-format = '[//](black bold) [$hostname](bold blue) '
-disabled = false
-
 # Shows current directory
 [directory]
 truncation_length = 0
@@ -67,7 +61,7 @@ style = '#7ed1fb' # yellow bold
 # Shows current git branch
 [git_branch]
 # symbol = ' '
-symbol = ' '
+symbol = ' '
 format = '[//](black bold) [$symbol\[$branch\]]($style) '
 # truncation_length = 0
 # truncation_symbol = '…/'
