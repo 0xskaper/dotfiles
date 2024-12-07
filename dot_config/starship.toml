@@ -112,7 +112,7 @@ format = '[//](black bold) [${symbol} ${pyenv_prefix}(${version} )(\($virtualenv
 [dart]
 symbol = ''
 
-[nodejs]
+[node]
 symbol = '󰎙'
 
 [go]
