@@ -16,7 +16,7 @@ require("vim-options")
 require("lazy").setup("plugins")
 
 vim.o.guifont = "JetBrainsMono Nerd Font:SemiBold:h17"
-vim.o.background = "dark"
+vim.o.background = "light"
 
 vim.g.neovide_padding_top = 20
 vim.g.neovide_padding_bottom = 1
@@ -36,7 +36,7 @@ vim.g.neovide_position_animation_length = 0.20
 vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=yellow")
 vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
-vim.cmd("hi SignColumn guibg=#282828")
+vim.cmd("hi SignColumn guibg=#f2e5bc")
 vim.cmd("hi Visual guibg=#3c3836")
 vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>")
 vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>")
