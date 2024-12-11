@@ -27,7 +27,7 @@ disabled = false
 # ---
 
 [os]
-format = '[$symbol](bold white) '   
+format = '[$symbol](bold #98971a) '   
 disabled = false
 
 [os.symbols]
@@ -43,7 +43,7 @@ Unknown = '󰠥'
 [username]
 style_user = 'black bold'
 style_root = 'black bold'
-format = '[//](black bold) [$user](#2883ff) ' # 2883ff
+format = '[//](black bold) [$user](#076678) ' # 2883ff
 disabled = false
 show_always = true
 
@@ -55,7 +55,7 @@ home_symbol = '~'
 # read_only_style = '197'
 read_only = '  '
 format = '[//](black bold) [$path]($style)[$read_only]($read_only_style) '
-style = '#7ed1fb' # yellow bold
+style = '#7d79921' # yellow bold
 
 
 # Shows current git branch
