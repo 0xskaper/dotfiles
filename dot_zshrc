@@ -21,3 +21,4 @@ alias moizsh="chezmoi edit ~/.zshrc"
 alias moiupdate="chezmoi apply"
 source "$HOME/.openai_key.zsh"
 export PATH=$PATH:$HOME/go/bin
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
