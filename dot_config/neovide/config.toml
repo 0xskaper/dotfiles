@@ -9,5 +9,4 @@ tabs = false
 
 [font]
 normal = ["FiraCode Nerd Font Mono"]
-style = "SemiBold"
 size = 17
