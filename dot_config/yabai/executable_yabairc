@@ -26,17 +26,17 @@ yabai -m config \
 	split_ratio 0.50 \
 	split_type horizontal \
 	auto_balance off \
-	top_padding 10 \
-	bottom_padding 10 \
-	left_padding 10 \
-	right_padding 10 \
+	top_padding 5 \
+	bottom_padding 5 \
+	left_padding 5 \
+	right_padding 5 \
 	window_gap 8 \
 	layout bsp \
 	mouse_modifier fn \
 	mouse_action1 move \
 	mouse_action2 resize \
 	mouse_drop_action swap \
-	external_bar all:0:30 \
+	external_bar all:0:35 \
 
 yabai -m rule --add app="^System Settings$" sticky=on manage=off
 yabai -m rule --add app="Stats" sticky=on manage=off
