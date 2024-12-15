@@ -98,7 +98,7 @@ disabled = false
 [helm]
 
 [python]
-symbol = '󰌠'
+symbol = '󰌠 '
 python_binary = ['./venv/bin/python', 'python', 'python3', 'python2']
 format = '[//](black bold) [${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style) '
 
@@ -110,13 +110,13 @@ format = '[//](black bold) [${symbol} ${pyenv_prefix}(${version} )(\($virtualenv
 [terraform]
 
 [dart]
-symbol = ''
+symbol = ' '
 
-[node]
-symbol = '󰎙'
+[npm]
+symbol = '󰎙 '
 
 [go]
-symbol = ''
+symbol = ' '
 
 [rust]
-symbol = '󱘗'
+symbol = '󱘗 '
