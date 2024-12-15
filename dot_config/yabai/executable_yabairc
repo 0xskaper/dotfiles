@@ -18,13 +18,13 @@ yabai -m config \
 	window_origin_display default \
 	window_placement second_child \
 	window_shadow off \
-	window_animation_duration 2.0 \
+	window_animation_duration 0.3 \
 	window_opacity_duration 0.0 \
 	active_window_opacity 1.0 \
-	normal_window_opacity 0.8 \
+	normal_window_opacity 0.5 \
 	window_opacity on \
-	split_ratio 0.30 \
-	split_type auto \
+	split_ratio 0.50 \
+	split_type horizontal \
 	auto_balance off \
 	top_padding 10 \
 	bottom_padding 10 \
@@ -36,7 +36,7 @@ yabai -m config \
 	mouse_action1 move \
 	mouse_action2 resize \
 	mouse_drop_action swap \
-	external_bar all 40:10 \
+	external_bar all 100:10 \
 
 yabai -m rule --add app="^System Settings$" sticky=on manage=off
 yabai -m rule --add app="Stats" sticky=on manage=off
