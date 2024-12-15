@@ -1,13 +1,13 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable", -- latest stable release
+		lazypath,
+	})
 end
 
 vim.cmd("set number relativenumber!")
@@ -18,7 +18,7 @@ require("lazy").setup("plugins")
 vim.o.guifont = "JetBrainsMono Nerd Font:Bold:h17"
 vim.o.background = "dark"
 
-vim.g.neovide_padding_top = 20
+vim.g.neovide_padding_top = 10
 vim.g.neovide_padding_bottom = 1
 vim.g.neovide_padding_right = 0
 vim.g.neovide_padding_left = 0
@@ -33,11 +33,11 @@ vim.g.neovide_fullscreen = false
 vim.g.neovide_cursor_animation_length = 0.08
 vim.g.neovide_position_animation_length = 0.20
 
-vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=#282828")
+vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=#fbf1c7")
 vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
-vim.cmd("hi SignColumn guibg=#f2e5bc")
-vim.cmd("hi Visual guibg=#3c3836")
+vim.cmd("hi SignColumn guibg=#32302f")
+vim.cmd("hi Visual guibg=#32302f")
 vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>")
 vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>")
 vim.opt.showcmd = true
