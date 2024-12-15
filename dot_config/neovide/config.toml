@@ -8,6 +8,6 @@ title-hidden = true
 tabs = false
 
 [font]
-normal = ["JetBrainsMono Nerd Font Mono"]
+normal = ["JetBrains Nerd Font Mono"]
 style = "SemiBold"
 size = 17
