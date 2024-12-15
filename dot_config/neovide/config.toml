@@ -6,3 +6,8 @@ idle = true
 frame = "transparent"
 title-hidden = true
 tabs = false
+
+[font]
+normal = ["FireCode Nerd Mono"]
+font_weight = "Medium"
+size = 17
