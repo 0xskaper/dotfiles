@@ -9,5 +9,5 @@ tabs = false
 
 [font]
 normal = ["FiraCode Nerd Font Mono"]
-style = "medium"
+style = "Medium"
 size = 17
