@@ -8,6 +8,6 @@ title-hidden = true
 tabs = false
 
 [font]
-normal = ["FireMono Nerd Font"]
+normal = ["FiraMono Nerd Font"]
 style = "Medium"
 size = 17
