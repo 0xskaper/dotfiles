@@ -15,11 +15,11 @@ vim.opt.rtp:prepend(lazypath)
 require("vim-options")
 require("lazy").setup("plugins")
 
-vim.o.guifont = "JetBrainsMono Nerd Font:Bold:h17"
+vim.o.guifont = "FiraMono Nerd Font:Medium:h17"
 vim.o.background = "dark"
 
 vim.g.neovide_padding_top = 10
-vim.g.neovide_padding_bottom = 1
+vim.g.neovide_padding_bottom = 0
 vim.g.neovide_padding_right = 0
 vim.g.neovide_padding_left = 0
 vim.g.neovide_underline_stroke_scale = 0.5
@@ -28,10 +28,10 @@ vim.g.neovide_cursor_trail_size = 0.2
 vim.g.neovide_refresh_rate = 120
 vim.g.neovide_hide_mouse_when_typing = true
 vim.g.neovide_scroll_animation_length = 0.8
-vim.g.neovide_show_border = false
+vim.g.neovide_show_border = true
 vim.g.neovide_fullscreen = false
-vim.g.neovide_cursor_animation_length = 0.08
-vim.g.neovide_position_animation_length = 0.20
+vim.g.neovide_cursor_animation_length = 0.05
+vim.g.neovide_position_animation_length = 0.10
 
 vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=#fbf1c7")
 vim.cmd("hi LineNrAbove guifg=grey")

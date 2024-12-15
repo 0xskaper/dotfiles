@@ -8,7 +8,7 @@ return {
 			contrast = "hard",
 			palette_overrides = {
 				dark0_hard = "#32302f",
-				darlk1 = "#32302f",
+				dark1 = "#32302f",
 				bright_red = "#dd7575",
 			},
 		})
