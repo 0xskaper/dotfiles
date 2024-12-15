@@ -35,8 +35,8 @@ vim.g.neovide_position_animation_length = 0.10
 vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=#fbf1c7")
 vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
-vim.cmd("hi SignColumn guibg=#32302f")
-vim.cmd("hi Visual guibg=#32302f")
+vim.cmd("hi SignColumn guibg=#282828")
+vim.cmd("hi Visual guibg=#282828")
 vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>")
 vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>")
 vim.opt.showcmd = true
