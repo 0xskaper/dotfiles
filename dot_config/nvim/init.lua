@@ -13,7 +13,6 @@ end
 vim.cmd("set number relativenumber!")
 vim.opt.rtp:prepend(lazypath)
 require("vim-options")
-require("lazy").setup("plugins")
 
 vim.o.background = "dark"
 
