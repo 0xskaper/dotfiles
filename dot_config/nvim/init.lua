@@ -42,7 +42,4 @@ vim.opt.showcmd = true
 vim.opt.cmdheight = 0
 vim.opt.fillchars = { eob = " " }
 vim.loader.enable()
-require("lazy").setup({
-	{ import = "plugins" },
-	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-})
+require("lazy").setup("plugins")
