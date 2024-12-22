@@ -43,6 +43,7 @@ vim.opt.cmdheight = 0
 vim.opt.fillchars = { eob = " " }
 vim.loader.enable()
 require("lazy").setup({
+  {"plugins"},
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
