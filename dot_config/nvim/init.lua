@@ -1,13 +1,13 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable", -- latest stable release
+		lazypath,
+	})
 end
 
 vim.cmd("set number relativenumber!")
@@ -43,30 +43,6 @@ vim.opt.cmdheight = 0
 vim.opt.fillchars = { eob = " " }
 vim.loader.enable()
 require("lazy").setup({
-  {import = "plugins"},
-  {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-    config = function()
-      local configs = require("nvim-treesitter.configs")
-
-      configs.setup({
-        ensure_installed = {
-          "c",
-          "lua",
-          "vim",
-          "vimdoc",
-          "query",
-          "elixir",
-          "heex",
-          "javascript",
-          "html",
-          "go",
-        },
-        sync_install = false,
-        highlight = { enable = true },
-        indent = { enable = true },
-      })
-    end,
-  },
+	{ import = "plugins" },
+	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 })
