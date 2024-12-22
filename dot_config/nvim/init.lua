@@ -42,4 +42,8 @@ vim.opt.showcmd = true
 vim.opt.cmdheight = 0
 vim.opt.fillchars = { eob = " " }
 vim.loader.enable()
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", {
+	change_detection = {
+		notify = false,
+	},
+})
