@@ -90,7 +90,7 @@ Gentoo = " "
 HardenedBSD = "ﲊ "
 Illumos = " "
 Linux = " "
-Macos = " "
+Macos = "M1 "
 Manjaro = " "
 Mariner = " "
 MidnightBSD = " "
@@ -110,6 +110,10 @@ SUSE = " "
 Ubuntu = " "
 Unknown = " "
 Windows = " "
+
+[dart]
+symbol = " "
+format = "[$symbol($version )]($style)"
 
 [package]
 symbol = " "
