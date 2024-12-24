@@ -14,6 +14,7 @@ $git_status\
 $git_metrics\
 $git_state\
 $c\
+$dart\
 $rust\
 $golang\
 $nodejs\
@@ -126,7 +127,7 @@ Ubuntu = "󰕈"
 SUSE = ""
 Raspbian = "󰐿"
 Mint = "󰣭"
-Macos = "󰀵"
+Macos = " ARM M1 "
 Manjaro = ""
 Linux = "󰌽"
 Gentoo = "󰣨"
@@ -260,6 +261,12 @@ format = '[( $symbol( $version) )]($style)'
 
 [python]
 symbol = ""
+style = "fg:color_env"
+format = '[( $symbol( $version)( $virtualenv) )]($style)'
+version_format = '${raw}'
+
+[dart]
+symbol = " "
 style = "fg:color_env"
 format = '[( $symbol( $version)( $virtualenv) )]($style)'
 version_format = '${raw}'
