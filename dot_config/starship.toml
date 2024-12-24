@@ -1,124 +1,42 @@
 format = """
+$battery\
+$username\
+$hostname\
+$directory\
 $git_branch\
+$git_state\
 $git_status\
-$python\
-$nodejs\
-$c\
-$cpp\
-$rust\
-$java\
-$golang\
-$docker_context\
-$kubernetes
-$battery    $time
-$os [$username](yellow)[@](cyan)[$hostname](green) $directory$character
-"""
-
-[character]
-success_symbol = '[➜](bold green)'
-error_symbol = '[➜](bold red)'
-
-[battery]
-full_symbol = "• "
-charging_symbol = "⇡ "
-discharging_symbol = "⇣ "
-
-[[battery.display]]
-threshold = 100
-
-[time]
-format = "[$time]($style)"
-disabled = false
-
-[username]
-show_always = true
-format = "[$user]($style)"
-
-[hostname]
-ssh_only = false
-format = "[$hostname]($style)"
-
-[c]
-format = "[$symbol($version )]($style)"
-symbol = " "
+$cmd_duration\
+$line_break\
+$character"""
 
 [directory]
 read_only = " "
 
-[docker_context]
-symbol = " "
-format = "[$symbol$context]($style)"
+[battery]
+full_symbol = "•"
+charging_symbol = "⇡"
+discharging_symbol = "⇣"
 
-[elm]
-symbol = " "
+[git_branch]
+format = "[$branch]($style)"
+style = "bright-black"
 
-[golang]
-symbol = " "
-format = "[$symbol($version )]($style)"
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](bright-black) ($ahead_behind$stashed)]($style)"
+style = "cyan"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
 
-[hg_branch]
-symbol = " "
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
 
-[java]
-symbol = " "
-format = "[$symbol($version )]($style)"
-
-[memory_usage]
-symbol = " "
-
-[nodejs]
-format = "[$symbol($version )]($style)"
-symbol = " "
-
-[os]
-disabled = false
-
-[os.symbols]
-Alpine = " "
-Amazon = " "
-Android = " "
-Arch = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "﯑ "
-Gentoo = " "
-HardenedBSD = "ﲊ "
-Illumos = " "
-Linux = " "
-Macos = "M1 "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = " "
-openSUSE = " "
-OracleLinux = " "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-Redox = " "
-Solus = "ﴱ "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Windows = " "
-
-[dart]
-symbol = " "
-format = "[$symbol($version )]($style)"
-
-[package]
-symbol = " "
-format = "[$symbol($version )]($style)"
-
-[python]
-symbol = " "
-format = "[$symbol($version )]($style)"
+[cmd_duration]
+format = "[$duration]($style) "
+style = "yellow"
