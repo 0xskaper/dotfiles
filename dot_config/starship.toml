@@ -138,7 +138,7 @@ fish_style_pwd_dir_length = 0
 use_logical_path = true
 
 [git_branch]
-symbol = "-<"
+symbol = "[>-](bold)"
 style = "fg:color_git"
 format = '[( $symbol $branch )]($style)'
 only_attached = true
@@ -370,12 +370,12 @@ disabled = false
 
 [character]
 disabled = false
-success_symbol = '[λ](bold fg:color_ok)'
-error_symbol = '[λ](bold fg:color_danger)'
-vimcmd_symbol = '[❮](bold fg:color_vimcmd_ok)'
-vimcmd_replace_one_symbol = '[❮](bold fg:color_vimcmd_replace)'
-vimcmd_replace_symbol = '[❮](bold fg:color_vimcmd_replace)'
-vimcmd_visual_symbol = '[❮](bold fg:color_vimcmd_visual)'
+success_symbol = '[ λ](bold fg:color_ok)'
+error_symbol = '[ λ](bold fg:color_danger)'
+vimcmd_symbol = '[ ❮](bold fg:color_vimcmd_ok)'
+vimcmd_replace_one_symbol = '[ ❮](bold fg:color_vimcmd_replace)'
+vimcmd_replace_symbol = '[ ❮](bold fg:color_vimcmd_replace)'
+vimcmd_visual_symbol = '[ ❮](bold fg:color_vimcmd_visual)'
 
 [custom.keyboard_layout]
 command = """
