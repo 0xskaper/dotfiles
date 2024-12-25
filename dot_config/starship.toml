@@ -27,6 +27,7 @@ $kubernetes\
 $shell\
 $container\
 $jobs
+$memory_usage\
 ${custom.memory_usage}\
 ${custom.battery}\
 ${custom.keyboard_layout}\
