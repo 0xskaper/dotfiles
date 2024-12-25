@@ -36,7 +36,7 @@ $status\
 $line_break\
 $character\
 """
-
+[palettes.default]
 color_ok = '#b8bb26'
 color_danger = '#fb4934'
 color_caution = '#d79921'
@@ -71,7 +71,7 @@ Ubuntu = "󰕈"
 SUSE = ""
 Raspbian = "󰐿"
 Mint = "󰣭"
-Macos = " ARM M1 "
+Macos = "  ARM M1 "
 Manjaro = ""
 Linux = "󰌽"
 Gentoo = "󰣨"
@@ -289,11 +289,11 @@ format = "( $output )"
 disabled = false
 
 [battery]
-full_symbol = "󰁹"
-charging_symbol = "󰂄"
-discharging_symbol = "󰂃"
+full_symbol = ""
+charging_symbol = "PWR"
+discharging_symbol = "LOW"
 unknown_symbol = "󰂑"
-empty_symbol = "󰂎"
+empty_symbol = "NULL PWR"
 format = '( [$symbol( $percentage)]($style) )'
 disabled = false
 
@@ -313,7 +313,7 @@ style = "fg:color_other"
 disabled = false
 time_format = "%R"
 style = "fg:color_time"
-format = '[ 󰔛 $time ]($style)'
+format = '[ $time ]($style)'
 
 [cmd_duration]
 min_time = 2000
