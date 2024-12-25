@@ -297,7 +297,7 @@ format = "( $output )"
 disabled = false
 
 [memory_usage]
-threshold = 0
+threshold = -1
 symbol = "󰓅"
 style = "fg:color_other"
 format = '( [$symbol( ${ram})]($style) )'
