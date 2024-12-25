@@ -40,6 +40,7 @@ $character\
 palette = 'default'
 
 [palettes.default]
+
 color_ok = '#b8bb26'
 color_danger = '#fb4934'
 color_caution = '#d79921'
@@ -111,7 +112,7 @@ fish_style_pwd_dir_length = 0
 use_logical_path = true
 
 [git_branch]
-symbol = "[-<](bold)"
+symbol = "[-<](red bold)"
 style = "fg:color_git"
 format = '[( $symbol $branch )]($style)'
 only_attached = true
