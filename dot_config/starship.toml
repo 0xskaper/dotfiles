@@ -26,7 +26,7 @@ $docker_context\
 $kubernetes\
 $shell\
 $container\
-$jobs\
+$jobs
 ${custom.memory_usage}\
 ${custom.battery}\
 ${custom.keyboard_layout}\
