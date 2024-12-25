@@ -36,6 +36,9 @@ $status\
 $line_break\
 $character\
 """
+
+palette = "default"
+
 [palettes.default]
 color_ok = '#b8bb26'
 color_danger = '#fb4934'
