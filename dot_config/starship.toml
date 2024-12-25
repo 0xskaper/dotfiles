@@ -5,7 +5,7 @@ command_timeout = 2000
 format = """
 $username\
 $os\
-$directory\
+$directory
 $git_branch\
 $git_commit\
 $git_status\
@@ -370,8 +370,8 @@ disabled = false
 
 [character]
 disabled = false
-success_symbol = '[❯](bold fg:color_ok)'
-error_symbol = '[❯](bold fg:color_danger)'
+success_symbol = '[λ](bold fg:color_ok)'
+error_symbol = '[λ](bold fg:color_danger)'
 vimcmd_symbol = '[❮](bold fg:color_vimcmd_ok)'
 vimcmd_replace_one_symbol = '[❮](bold fg:color_vimcmd_replace)'
 vimcmd_replace_symbol = '[❮](bold fg:color_vimcmd_replace)'
