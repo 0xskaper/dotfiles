@@ -40,6 +40,7 @@ return {
 			lspconfig.pylsp.setup({ capabilities = capabilities })
 			lspconfig.html.setup({ capabilities = capabilities })
 			lspconfig.ast_grep.setup({ capabilities = capabilities })
+			lspconfig.harper_ls.setup({ capabilities = capabilities })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
