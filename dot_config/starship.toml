@@ -292,7 +292,6 @@ disabled = false
 full_symbol = ""
 charging_symbol = "PWR"
 discharging_symbol = "LOW"
-unknown_symbol = "󰂑"
 empty_symbol = "NULL PWR"
 format = '( [$symbol( $percentage)]($style) )'
 disabled = false
