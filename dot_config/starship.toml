@@ -37,7 +37,7 @@ $line_break\
 $character\
 """
 
-palette = "default"
+palette = 'default'
 
 [palettes.default]
 color_ok = '#b8bb26'
