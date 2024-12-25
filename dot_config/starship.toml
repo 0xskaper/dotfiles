@@ -160,7 +160,7 @@ fish_style_pwd_dir_length = 0
 use_logical_path = true
 
 [git_branch]
-symbol = "[-<](red bold)"
+symbol = "-<"
 style = "fg:color_git"
 format = '[( $symbol $branch )]($style)'
 only_attached = true
@@ -175,7 +175,7 @@ style = "fg:color_git"
 format = "[(( $tag)( @$hash) )]($style)"
 commit_hash_length = 7
 only_detached = true
-tag_symbol = "[# ](bold)"
+tag_symbol = "#"
 tag_disabled = false
 disabled = false
 
