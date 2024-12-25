@@ -1,3 +1,5 @@
+add_newline = true
+
 command_timeout = 2000
 
 format = """
@@ -38,31 +40,6 @@ $character\
 palette = 'default'
 
 [palettes.default]
-
-color_ok = 'bright-green'
-color_danger = 'bright-red'
-color_caution = 'bright-yellow'
-
-color_os = '#076678'
-color_username = '#076678'
-color_directory = 'yellow'
-color_git = 'cyan'
-color_git_added = 'bright-green'
-color_git_deleted = 'bright-red'
-color_env = 'blue'
-color_kubernetes = 'purple'
-color_docker = 'blue'
-color_shell = ''
-color_container = ''
-color_other = ''
-color_time = ''
-color_duration = ''
-
-color_vimcmd_ok = 'green'
-color_vimcmd_replace = 'purple'
-color_vimcmd_visual = 'yellow'
-
-[palettes.gruvbox_dark]
 
 color_ok = '#b8bb26'
 color_danger = '#fb4934'
