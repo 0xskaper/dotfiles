@@ -13,4 +13,4 @@ adjust-cell-width = -1
 #Key Bindings
 keybind = ctrl+s>n=new_window
 keybind = ctrl+s>t=new_tab
-keybind = ctrl+s>h=new_split:bottom
+keybind = ctrl+s>h=new_split:top
