@@ -1,4 +1,7 @@
+#Terminal GUI
 background = 282828
 foreground = fbf1c7
 
+#Terminal Font
 font-size = 17
+font-style-semibold
