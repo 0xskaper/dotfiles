@@ -12,4 +12,3 @@ keybind = ctrl+s>n=new_window
 keybind = ctrl+s>t=new_tab
 keybind = ctrl+s>q=toggle_visibility
 keybind = ctrl+s>s=new_split:bottom
-keybind = ctrl+s>'=new_split:right
