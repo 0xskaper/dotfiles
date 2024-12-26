@@ -4,4 +4,12 @@ foreground = fbf1c7
 
 #Terminal Font
 font-size = 17
-font-style-semibold
+font-family = "JetBrains Mono SemiBold"
+
+#Key Bindings
+keybind = ctrl+s>r=reload_config
+keybind = ctrl+s>n=new_window
+keybind = ctrl+s>t=new_tab
+keybind = ctrl+s>q=toggle_visibility
+keybind = ctrl+s>s=new_split:bottom
+keybind = ctrl+s>'=new_split:right
