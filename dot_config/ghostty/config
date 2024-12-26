@@ -1,6 +1,8 @@
 #Terminal GUI
 background = 282828
 foreground = fbf1c7
+window-padding-y = 10, 10
+window-padding-x = 5, 5
 
 #Terminal Font
 font-size = 17
@@ -9,4 +11,6 @@ font-thicken
 adjust-cell-width = -1
 
 #Key Bindings
-keybind = ctrl+a>n=new_window
+keybind = ctrl+s>n=new_window
+keybind = ctrl+s>t=new_tab
+keybind = ctrl+s>s=new_split:bottom
