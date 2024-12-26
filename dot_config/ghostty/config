@@ -18,6 +18,6 @@ keybind = ctrl+s>"=new_split:right
 keybind = ctrl+s>r=reload_config
 keybind = ctrl+l=goto_split:right
 keybind = ctrl+h=goto_split:left
-keybind = ctrl+j=goto_split:down
-keybind = ctrl+k=goto_split:up
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
 keybind = ctrl+x=close_surface
