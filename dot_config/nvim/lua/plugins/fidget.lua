@@ -3,8 +3,6 @@ return {
 	branch = "legacy",
 	enabled = false,
 	config = function()
-		require("fidget").setup({
-			window = { blend = 0 },
-		})
+		require("fidget").setup({})
 	end,
 }
