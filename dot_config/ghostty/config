@@ -1,6 +1,5 @@
 #Terminal GUI
 foreground = fbf1c7
-background = 282828
 window-padding-y = 10, 0
 window-padding-x = 5, 5
 gtk-titlebar = false
