@@ -4,8 +4,8 @@ foreground = fbf1c7
 window-padding-y = 10, 0
 window-padding-x = 5, 5
 macos-titlebar-style = "hidden"
-background-opacity = .98
-background-blur-radius = 30
+background-opacity = .99
+background-blur-radius = 20
 
 #Terminal Font
 font-size = 17
