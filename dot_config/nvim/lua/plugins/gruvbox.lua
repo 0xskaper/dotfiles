@@ -4,6 +4,7 @@ return {
 	opts = ...,
 	config = function()
 		require("gruvbox").setup({
+			transparent_mode = true,
 			contrast = "hard",
 			terminal_colors = true,
 			palette_overrides = {
