@@ -4,7 +4,7 @@ background = 282828
 window-padding-y = 10, 0
 window-padding-x = 5, 5
 gtk-titlebar = false
-background-opacity = 0
+background-opacity = .90
 background-blur-radius = 20
 
 #Terminal Font
