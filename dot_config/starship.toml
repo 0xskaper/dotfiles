@@ -301,7 +301,7 @@ disabled = false
 threshold = -1
 symbol = "󰓅"
 style = "fg:color_other"
-format = '( [$symbol( ${ram})]($style) )'
+format = '( [$symbol( ${ram} | ${ram_pct} | ${swap**})]($style) )'
 disabled = false
 
 [custom.battery]
