@@ -14,7 +14,7 @@ vim.cmd("set number relativenumber!")
 vim.opt.rtp:prepend(lazypath)
 require("vim-options")
 
-vim.o.background = "light"
+vim.o.background = "dark"
 
 vim.g.neovide_padding_top = 10
 vim.g.neovide_padding_bottom = 0
@@ -31,10 +31,10 @@ vim.g.neovide_fullscreen = false
 vim.g.neovide_cursor_animation_length = 0.05
 vim.g.neovide_position_animation_length = 0.10
 
-vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=#f2e5bc")
+vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=#282828")
 vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
-vim.cmd("hi SignColumn guibg=#f2e5bc")
+vim.cmd("hi SignColumn guibg=#282828")
 vim.cmd("hi Visual guibg=#282828")
 vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>")
 vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>")

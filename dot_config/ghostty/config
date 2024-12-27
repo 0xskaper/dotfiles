@@ -1,12 +1,12 @@
 #Terminal GUI
-background = fbf1c7
-foreground = 282828
+foreground = fbf1c7
+background = 282828
 window-padding-y = 10, 0
 window-padding-x = 5, 5
 
 #Terminal Font
 font-size = 17
-font-family = "JetBrains Mono SemiBold"
+font-family = "FiraCode Nerd Font"
 font-thicken
 adjust-cell-width = -1
 
