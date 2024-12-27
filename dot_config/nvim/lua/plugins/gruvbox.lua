@@ -6,7 +6,7 @@ return {
 		require("gruvbox").setup({
 			terminal_colors = true,
 			palette_overrides = {
-				light1 = "#f2e5bc",
+				light0 = "#f2e5bc",
 				bright_red = "#dd7575",
 			},
 		})
