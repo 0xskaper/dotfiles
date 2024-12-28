@@ -1,7 +1,7 @@
 return {
 	"j-hui/fidget.nvim",
 	branch = "legacy",
-	enabled = false,
+	enabled = true,
 	config = function()
 		require("fidget").setup({})
 	end,
