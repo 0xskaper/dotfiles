@@ -15,7 +15,7 @@ cursor-color = 928374
 font-size = 17
 font-family = "DIN Alternate"
 font-thicken
-adjust-cell-width = 0
+adjust-cell-width = -5
 
 #Key Bindings
 keybind = ctrl+s>n=new_window
