@@ -3,9 +3,9 @@ return {
 	cmd = "ShowkeysToggle",
 	opts = {
 		timeout = 1,
-		maxkeys = 6,
+		maxkeys = 3,
 		-- bottom-left, bottom-right, bottom-center, top-left, top-right, top-center
-		position = "bottom-right",
+		position = "bottom-center",
 	},
 
 	keys = {
