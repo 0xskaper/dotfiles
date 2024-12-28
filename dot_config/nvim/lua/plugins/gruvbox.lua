@@ -5,9 +5,11 @@ return {
   config = function()
     require("gruvbox").setup({
       transparent_mode = true,
-      contrast = "soft",
       terminal_colors = true,
       palette_overrides = {
+        light0_hard = "#fbf1c7",
+        light0 = "#fbf1c7",
+        light1 = "#fbf1c7",
         bright_red = "#dd7575",
       },
     })
