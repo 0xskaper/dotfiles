@@ -8,10 +8,12 @@ bold-is-bright = true
 macos-icon-frame = chrome
 cursor-text = 076678
 cursor-style = block_hollow
+mouse-hide-while-typing
+cursor-color = 928374
 
 #Terminal Font
 font-size = 17
-font-family = "JetBrainsMono Nerd Font"
+font-family = "DIN Alternate"
 font-thicken
 adjust-cell-width = -1
 
