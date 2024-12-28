@@ -4,6 +4,10 @@ background = f2e5bc
 window-padding-y = 10, 0
 window-padding-x = 5, 5
 macos-titlebar-style = "hidden"
+bold-is-bright = true
+macos-icon-frame = chorme
+cursor-text = 076678
+cursor-style = block_hollow
 
 #Terminal Font
 font-size = 17
@@ -23,3 +27,4 @@ keybind = ctrl+j=goto_split:bottom
 keybind = ctrl+k=goto_split:top
 keybind = ctrl+x=close_surface
 keybind = ctrl+s>f=toggle_fullscreen
+keybind = ctrl+s>h=toggle_visibility
