@@ -36,7 +36,6 @@ vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=yellow")
 vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
 vim.cmd("hi SignColumn guibg=#f2e5bc")
-vim.cmd("hi Visual guibg=#f2e5bc")
 vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>")
 vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>")
 vim.opt.showcmd = true
