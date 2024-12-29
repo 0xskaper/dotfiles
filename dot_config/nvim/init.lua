@@ -1,14 +1,14 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
+	vim.fn.system({
 
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- Latest stable release
-    lazypath,
-  })
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable", -- Latest stable release
+		lazypath,
+	})
 end
 
 vim.cmd("set number relativenumber!")
@@ -32,7 +32,7 @@ vim.g.neovide_fullscreen = false
 vim.g.neovide_cursor_animation_length = 0.05
 vim.g.neovide_position_animation_length = 0.10
 
-vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=yellow")
+vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=#282828")
 vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
 vim.cmd("hi SignColumn guibg=#f2e5bc")
