@@ -1,8 +1,8 @@
 #Terminal GUI
 foreground = 282828
 background = f2e5bc
-window-padding-y = 0, 0
-window-padding-x = 0, 0
+window-padding-y = 10, 0
+window-padding-x = 10, 10
 macos-titlebar-style = "hidden"
 bold-is-bright = true
 macos-icon-frame = chrome
