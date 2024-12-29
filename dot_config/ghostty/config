@@ -10,7 +10,7 @@ cursor-text = 076678
 cursor-style = block_hollow
 mouse-hide-while-typing
 cursor-color = 928374
-background-opacity = 0.90
+background-opacity = 0.85
 background-blur-radius = 20
 
 #Terminal Font
