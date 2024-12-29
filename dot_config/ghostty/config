@@ -1,6 +1,6 @@
 #Terminal GUI
-foreground = 282828
-background = f2e5bc
+background = 1d2021
+foreground = f2e5bc
 window-padding-y = 10, 0
 window-padding-x = 10, 10
 macos-titlebar-style = "hidden"
@@ -10,8 +10,6 @@ cursor-text = 076678
 cursor-style = block_hollow
 mouse-hide-while-typing
 cursor-color = 928374
-background-opacity = 0.85
-background-blur-radius = 30
 
 #Terminal Font
 font-size = 16
