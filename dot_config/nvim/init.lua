@@ -15,7 +15,7 @@ vim.cmd("set number relativenumber!")
 vim.opt.rtp:prepend(lazypath)
 require("vim-options")
 
-vim.o.background = "dark"
+vim.o.background = "light"
 
 vim.g.neovide_padding_top = 10
 vim.g.neovide_padding_bottom = 0
