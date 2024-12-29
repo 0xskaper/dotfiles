@@ -11,7 +11,7 @@ cursor-style = block_hollow
 mouse-hide-while-typing
 cursor-color = 928374
 background-opacity = 0.90
-background-blur = 20
+background-blur-radius = 20
 
 #Terminal Font
 font-size = 17
