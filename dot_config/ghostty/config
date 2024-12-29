@@ -2,7 +2,7 @@
 foreground = 282828
 background = f2e5bc
 window-padding-y = 10, 0
-window-padding-x = 5, 5
+window-padding-x = 10, 10
 macos-titlebar-style = "hidden"
 bold-is-bright = true
 macos-icon-frame = chrome
