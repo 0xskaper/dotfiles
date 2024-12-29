@@ -1,6 +1,6 @@
 local colors = {
-  bg = nil,
-  fg = "#282828",
+  bg = "#1d2021",
+  fg = "#ebdbb2",
   yellow = "#ECBE7B",
   cyan = "#008080",
   darkblue = "#081633",
