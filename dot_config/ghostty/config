@@ -1,6 +1,6 @@
 #Terminal GUI
-background = 282828
-foreground = f2e5bc
+foreground = 282828
+background = f2e5bc
 window-padding-y = 10, 0
 window-padding-x = 10, 10
 macos-titlebar-style = "hidden"
@@ -14,7 +14,7 @@ background-opacity = 0.85
 background-blur-radius = 30
 
 #Terminal Font
-font-size = 17
+font-size = 16
 font-family = "JetBrainsMono Nerd Font"
 font-thicken
 adjust-cell-width = -1

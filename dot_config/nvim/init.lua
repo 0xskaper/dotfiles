@@ -32,7 +32,7 @@ vim.g.neovide_fullscreen = false
 vim.g.neovide_cursor_animation_length = 0.05
 vim.g.neovide_position_animation_length = 0.10
 
-vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=black")
+vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=yellow")
 vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
 vim.cmd("hi SignColumn guibg=#f2e5bc")
