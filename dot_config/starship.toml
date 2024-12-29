@@ -38,7 +38,7 @@ $line_break\
 $character\
 """
 
-palette = 'default'
+palette = 'light'
 
 [palettes.default]
 
