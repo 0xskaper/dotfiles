@@ -40,7 +40,7 @@ $character\
 
 palette = 'default'
 
-[palettes.gruvbox_dark]
+[palettes.default]
 
 color_ok = '#b8bb26'
 color_danger = '#fb4934'
@@ -65,7 +65,7 @@ color_vimcmd_ok = '#8ec07c'
 color_vimcmd_replace = '#b16286'
 color_vimcmd_visual = '#d79921'
 
-[palettes.default]
+[palettes.light]
 
 color_ok = '#79740e'
 color_danger = '#9d0006'
