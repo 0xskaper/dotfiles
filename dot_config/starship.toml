@@ -140,7 +140,7 @@ use_logical_path = true
 [git_branch]
 symbol = "[-<](bold)"
 style = "fg:color_git"
-format = '[( $symbol $branch )]($style)'
+format = '[($symbol $branch )]($style)'
 only_attached = true
 ignore_branches = []
 truncation_length = 25
@@ -301,7 +301,7 @@ disabled = false
 threshold = -1
 symbol = "󰓅"
 style = "fg:color_other"
-format = '( [$symbol( ${ram_pct} | ${swap_pct})]($style) )'
+format = '([$symbol( ${ram_pct} | ${swap_pct})]($style) )'
 disabled = false
 
 [custom.battery]
