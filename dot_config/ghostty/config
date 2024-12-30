@@ -13,7 +13,7 @@ cursor-color = 928374
 
 #Terminal Font
 font-size = 17
-font-family = "TX-02-Trial"
+font-family = "Zenbones Mono"
 font-thicken
 adjust-cell-width = -1
 
