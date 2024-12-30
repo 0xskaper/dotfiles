@@ -14,6 +14,7 @@ cursor-color = 928374
 #Terminal Font
 font-size = 16
 font-family = "TX-02-Trial"
+font-thicken
 
 #Key Bindings
 keybind = ctrl+s>n=new_window
