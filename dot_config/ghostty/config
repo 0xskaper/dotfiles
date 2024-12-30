@@ -12,11 +12,10 @@ mouse-hide-while-typing
 cursor-color = 928374
 
 #Terminal Font
-font-size = 16
+font-size = 17
 font-family = "TX-02-Trial"
 font-thicken
 adjust-cell-width = -1
-adjust-cell-height = 3
 
 #Key Bindings
 keybind = ctrl+s>n=new_window
