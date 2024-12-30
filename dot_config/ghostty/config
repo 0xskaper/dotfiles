@@ -16,7 +16,7 @@ font-size = 16
 font-family = "TX-02-Trial"
 font-thicken
 adjust-cell-width = -1
-adjust-cell-height = 2
+adjust-cell-height = 3
 
 #Key Bindings
 keybind = ctrl+s>n=new_window
