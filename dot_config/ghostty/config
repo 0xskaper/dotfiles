@@ -1,5 +1,5 @@
 #Terminal GUI
-background = 1d2021
+background = 000000
 foreground = f2e5bc
 window-padding-y = 10, 0
 window-padding-x = 10, 10
