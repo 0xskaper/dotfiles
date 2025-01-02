@@ -1,6 +1,4 @@
--- Lua
 return {
-  "folke/twilight.nvim",
-  opts = {
-  }
+	"folke/twilight.nvim",
+	opts = {},
 }
