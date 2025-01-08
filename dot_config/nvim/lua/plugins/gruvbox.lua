@@ -4,20 +4,20 @@ return {
 	opts = ...,
 	config = function()
 		require("gruvbox").setup({
-			contrast = "soft",
+			contrast = "hard",
 			terminal_colors = true,
 			italic = {
 				strings = false,
 			},
-			override = {
+			overrides = {
 				CursorLineNr = { fg = "yellow" },
 				Keyword = { bold = true },
 			},
 			palette_overrides = {
-				light0_soft = "#282828",
-				dark0 = "#282828",
-				dark1 = "#282828",
-				bright_red = "#9d0006",
+				light0_soft = "#1d2021",
+				dark0 = "#1d2021",
+				dark1 = "#1d2021",
+				bright_red = "#B33F40",
 			},
 		})
 		vim.cmd("colorscheme gruvbox")
