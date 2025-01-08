@@ -11,7 +11,7 @@ return {
 			},
 			overrides = {
 				CursorLineNr = { fg = "yellow" },
-				Keyword = { bold = true },
+				Keyword = { fg = "#B33F40", bold = true },
 			},
 			palette_overrides = {
 				light0_soft = "#1d2021",
