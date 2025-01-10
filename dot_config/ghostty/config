@@ -10,6 +10,7 @@ cursor-text = 076678
 cursor-style = block_hollow
 mouse-hide-while-typing
 cursor-color = 928374
+theme = gruvbox-material-hard-dark
 
 #Terminal Font
 font-size = 17
