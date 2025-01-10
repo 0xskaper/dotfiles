@@ -5,9 +5,6 @@ window-padding-y = 10, 0
 window-padding-x = 10, 10
 macos-titlebar-style = "hidden"
 bold-is-bright = true
-macos-icon-frame = chrome
-cursor-text = 076678
-cursor-style = block_hollow
 mouse-hide-while-typing
 cursor-color = 928374
 theme = gruvbox-material-hard-dark
