@@ -29,7 +29,7 @@ local conditions = {
 local getGithubUsername = function()
 	local handle = io.popen("git config user.name")
 	local result = handle:read("*a")
-	return string.sub(result, 1, -2) .. "  ->"
+	return string.sub(result, 1, -2) .. " 󰵉"
 end
 
 -- Config
