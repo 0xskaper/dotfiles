@@ -19,7 +19,7 @@ adjust-cell-width = -1
 keybind = ctrl+s>n=new_window
 keybind = ctrl+s>t=new_tab
 keybind = ctrl+s>s=new_split:down
-keybind = ctrl+s>"=new_split:right
+keybind = ctrl+s>v=new_split:right
 keybind = ctrl+s>r=reload_config
 keybind = ctrl+l=goto_split:right
 keybind = ctrl+h=goto_split:left
