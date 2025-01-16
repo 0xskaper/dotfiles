@@ -1,165 +1,125 @@
-format = """\
-[╭╴](fg:arrow)\
+format = """
+[](#BA1861)\
 $username\
-$os\
+[](bg:#DB4678 fg:#BA1861)\
+$directory\
+[](fg:#DB4678 bg:#E87D8C)\
 $git_branch\
-(\
-    at \
-    $directory\
-)\
-$cmd_duration\
-(\
-    via \
-    $python\
-    $conda\
-    $nodejs\
-    $c\
-    $rust\
-    $java\
-)
-[╰─](fg:arrow)$character\
+$git_status\
+[](fg:#E87D8C bg:#89ABCE)\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+[](fg:#89ABCE bg:#06969A)\
+$docker_context\
+[](fg:#06969A bg:#ab0cb6)\
+$time\
+[ ](fg:#ab0cb6)\
 """
-# Add the modules you need
 
 # Disable the blank line at the start of the prompt
-add_newline = true
+# add_newline = false
 
-
-palette = "normal"
-
-
-[palettes.normal]
-arrow = "#333533"
-os = "#16f4d0"
-os_admin = "#e4ff1a"
-directory = "#9ffff5"
-time = "#bdfffd"
-node = "#a5e6ba"
-git = "#f17f29"
-git_status = "#DFEBED"
-python = "#edf67d"
-conda = "#70e000"
-java = "#F86279"
-rust = "#ffdac6"
-clang = "#caf0f8"
-duration = "#ce4257"
-text_color = "#EDF2F4"
-text_light = "#26272A"
-
-# I disabled some modules (Rust, Java...) since some things aren't installed in my machine, enable them if you need.
-
+# You can also replace your username with a neat symbol like  to save some space
 [username]
-style_user = 'bold os'
-style_root = 'bold os_admin'
-format = '[  $user](fg:$style) '
-disabled = false
 show_always = true
-
-[os]
-format = "on [($name)]($style) "
-style = "bold blue"
-disabled = true
-
-[os.symbols]
-Alpine = " "
-Arch = " "
-Debian = " "
-EndeavourOS = " "
-Fedora = " "
-Linux = " "
-Macos = " "
-Manjaro = " "
-Mint = " "
-NixOS = " "
-openSUSE = " "
-Pop = " "
-SUSE = " "
-Ubuntu = " "
-Windows = " "
-
-[character]
-success_symbol = "[󰍟](fg:arrow)"
-error_symbol = "[󰍟](fg:red)"
+style_user = "bg:#BA1861 fg:#FFFFFF"
+style_root = "bg:#BA1861 fg:#FFFFFF"
+format = '[$user ]($style)'
 
 [directory]
-format = "[$path](bold $style)[$read_only]($read_only_style) "
-truncation_length = 2
-style = "fg:directory"
-read_only_style = "fg:directory"
-before_repo_root_style = "fg:directory"
+style = "bg:#DB4678 fg:#FFFFFF"
+format = "[ $path ]($style)"
+truncation_length = 3
 truncation_symbol = "…/"
-truncate_to_repo = true
-read_only ="  "
 
-[time]
-disabled = true
-format = "at [󱑈 $time]($style)"
-time_format = "%H:%M"
-style = "bold fg:time"
-
-[cmd_duration]
-format = "took [ $duration]($style) "
-style = "bold fg:duration"
-min_time = 500
-
-[git_branch]
-format = "via [$symbol$branch]($style) "
-style = "bold fg:git"
-symbol = " "
-
-[git_status]
-format = '[ $all_status$ahead_behind ]($style)'
-style = "fg:text_color bg:git"
-disabled = true
-
-[docker_context]
-disabled=true
-symbol = " "
-
-[package]
-disabled=true
-
-[fill]
-symbol = " "
-
-[nodejs]
-format = "[ $symbol$version ]($style)"
-style = "bg:node fg:text_light"
-symbol = " "
-version_format = "${raw}"
-disabled=false
-
-[python]
-disabled=false
-format = '[ ${symbol}${pyenv_prefix}(${version})( \($virtualenv\)) ]($style)'
-symbol = " "
-version_format = "${raw}"
-style = "bg:python fg:text_light"
-
-[conda]
-format = "[ $symbol$environment ]($style)"
-style = "bg:conda fg:text_light"
-ignore_base = false
-disabled = false
-symbol = " "
-
-[java]
-format = "[ $symbol$version ]($style)"
-style = "bg:java fg:text_light"
-version_format = "${raw}"
-symbol = " "
-disabled = true
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+# Keep in mind that the order matters. For example:
+# "Important Documents" = "  "
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important  " = "  "
 
 [c]
-format = "[ $symbol($version(-$name)) ]($style)"
-style = "bg:clang fg:text_light"
 symbol = " "
-version_format = "${raw}"
-disabled=true
+style = "bg:#89ABCE fg:#FFFFFF"
+format = '[[ $symbol ($version) ](bg:#89ABCE fg:#FFFFFF)]($style)'
+
+[docker_context]
+symbol = " "
+style = "bg:#06969A fg:#FFFFFF"
+format = '[[ $symbol $context ](bg:#06969A fg:#FFFFFF)]($style) $path'
+
+[elixir]
+symbol = " "
+style = "bg:#89ABCE fg:#FFFFFF"
+format = '[[ $symbol ($version) ](bg:#89ABCE fg:#FFFFFF)]($style)'
+
+[elm]
+symbol = " "
+style = "bg:#89ABCE fg:#FFFFFF"
+format = '[[ $symbol ($version) ](bg:#89ABCE fg:#FFFFFF)]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:#E87D8C fg:#FFFFFF"
+format = '[[ $symbol $branch ](bg:#E87D8C fg:#FFFFFF)]($style)'
+
+[git_status]
+style = "bg:#E87D8C fg:#FFFFFF"
+format = '[[($all_status$ahead_behind )](bg:#E87D8C fg:#FFFFFF)]($style)'
+
+[golang]
+symbol = " "
+style = "bg:#89ABCE fg:#FFFFFF"
+format = '[[ $symbol ($version) ](bg:#89ABCE fg:#FFFFFF)]($style)'
+
+[haskell]
+symbol = " "
+style = "bg:#89ABCE fg:#FFFFFF"
+format = '[[ $symbol ($version) ](bg:#89ABCE fg:#FFFFFF)]($style)'
+
+[java]
+symbol = " "
+style = "bg:#89ABCE fg:#FFFFFF"
+format = '[[ $symbol ($version) ](bg:#89ABCE fg:#FFFFFF)]($style)'
+
+[julia]
+symbol = " "
+style = "bg:#89ABCE fg:#FFFFFF"
+format = '[[ $symbol ($version) ](bg:#89ABCE fg:#FFFFFF)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#89ABCE fg:#FFFFFF"
+format = '[[ $symbol ($version) ](bg:#89ABCE fg:#FFFFFF)]($style)'
+
+[nim]
+symbol = " "
+style = "bg:#89ABCE fg:#FFFFFF"
+format = '[[ $symbol ($version) ](bg:#89ABCE fg:#FFFFFF)]($style)'
 
 [rust]
-format ="[ $symbol$version ]($style)"
-style = "bg:rust fg:text_light"
-symbol = " "
-version_format = "${raw}"
-disabled=true
+symbol = ""
+style = "bg:#89ABCE fg:#FFFFFF"
+format = '[[ $symbol ($version) ](bg:#89ABCE fg:#FFFFFF)]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#ab0cb6 fg:#FFFFFF"
+format = '[[ ❤️ $time ](bg:#ab0cb6 fg:#FFFFFF)]($style)'
+
