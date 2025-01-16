@@ -4,7 +4,7 @@ return {
 	opts = ...,
 	config = function()
 		require("gruvbox").setup({
-			contrast = "soft",
+			contrast = "hard",
 			terminal_colors = true,
 			italic = {
 				strings = false,
@@ -14,8 +14,8 @@ return {
 				Keyword = { fg = "#B33F40", bold = true },
 			},
 			palette_overrides = {
-				dark0 = "#1d2021",
-				dark1 = "#1d2021",
+				dark0 = "#0d1316",
+				dark1 = "#0d1316",
 				bright_red = "#B33F40",
 				light0_soft = "#ebdbb2",
 				light1 = "#ebdbb2",
