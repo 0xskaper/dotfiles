@@ -11,7 +11,7 @@ cursor-color = 928374
 #Terminal Font
 font-size = 17
 font-family = "Berkeley Mono"
-font-thicken
+font-thicken = true
 adjust-cell-width = -1
 
 #Key Bindings
