@@ -1,6 +1,6 @@
 #Terminal GUI
-background = f2e5bc
-foreground = f2e5bc
+background = ebdbb2
+foreground = 282828
 window-padding-y = 10, 0
 window-padding-x = 10, 10
 macos-titlebar-style = "hidden"
