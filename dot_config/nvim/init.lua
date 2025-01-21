@@ -20,6 +20,7 @@ vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=yellow")
 vim.cmd("hi LineNrAbove guifg=grey")
 vim.cmd("hi LineNrBelow guifg=grey")
 vim.cmd("hi SignColumn guibg=#1d2021")
+vim.cmd("vim.fn.fnamemodify(vim.fn.stdpath 'data' .. '/typst-preview/', ':p')")
 vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>")
 vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>")
 vim.opt.showcmd = true
