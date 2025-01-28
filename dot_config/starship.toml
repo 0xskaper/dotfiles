@@ -19,8 +19,7 @@ fomat = "[$symbol]($style) "
 symbol = "ARM M1"
 
 [username]
-style = "green"
-format = "[$user]($style) "
+format = "[$user](green) "
 
 [directory]
 style = "blue"
@@ -62,7 +61,7 @@ format = "[$symbol]($style) "
 style = "blue"
 symbol = ""
 
-[go]
+[golang]
 format = "[$symbol]($style) "
 style = "cyan"
 symbol = ""
