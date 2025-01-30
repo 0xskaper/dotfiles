@@ -14,7 +14,7 @@ vim.cmd("set number relativenumber!")
 vim.opt.rtp:prepend(lazypath)
 require("vim-options")
 
-vim.o.background = "dark"
+vim.o.background = "light"
 
 vim.cmd("hi LineNr term=bold gui=bold cterm=bold guifg=yellow")
 vim.cmd("hi LineNrAbove guifg=grey")
@@ -36,7 +36,7 @@ require("lazy").setup({ import = "plugins" }, {
 		notify = false,
 	},
 	ui = {
-		-- border = "rounded"
+		border = "rounded",
 	},
 	performance = {
 		rtp = {
